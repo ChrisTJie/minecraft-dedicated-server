@@ -1,5 +1,5 @@
 import * as GameTest from "mojang-gametest";
-import { BlockLocation, MinecraftItemTypes, ItemStack } from "mojang-minecraft";
+import { BlockLocation, Location, MinecraftItemTypes, ItemStack } from "mojang-minecraft";
 
 function isNear(n1, n2) {
   return Math.abs(n1 - n2) < 0.01;
@@ -489,25 +489,25 @@ GameTest.register("ComponentTests", "strength_component", (test) => {
   .structureName("ComponentTests:animal_pen")
   .tag(GameTest.Tags.suiteDefault);
 
-GameTest.register("ComponentTests", "item_component", async (test) => {
-  const itemLoc = test.worldBlockLocation(new BlockLocation(1, 2, 1));
-  test.pressButton(new BlockLocation(0, 2, 0));
-  await test.idle(40);
-  const entities = test.getDimension().getEntitiesAtBlockLocation(itemLoc);
-  test.assert(entities.length === 1, "Expected 1 entity");
-  const itemComp = entities[0].getComponent("item");
+GameTest.registerAsync("ComponentTests", "item_component", async (test) => {
+  const itemAmount = 5;
+  const torchItem = new ItemStack(MinecraftItemTypes.torch, itemAmount);
+  const torch = test.spawnItem(torchItem, new Location(1.5, 2.5, 1.5));
+  const itemComp = torch.getComponent("item");
   test.assert(itemComp !== undefined, "Expected item component");
   test.assert(itemComp.itemStack.id === "minecraft:torch", "Unexpected item id");
-  test.assert(itemComp.itemStack.amount === 1, "Unexpected item amount");
+  test.assert(itemComp.itemStack.amount === itemAmount, "Unexpected item amount");
   test.succeed();
-}).tag(GameTest.Tags.suiteDefault);
+})
+  .structureName("ComponentTests:platform")
+  .tag(GameTest.Tags.suiteDefault);
 
 // SIG // Begin signature block
 // SIG // MIInxwYJKoZIhvcNAQcCoIInuDCCJ7QCAQExDzANBglg
 // SIG // hkgBZQMEAgEFADB3BgorBgEEAYI3AgEEoGkwZzAyBgor
 // SIG // BgEEAYI3AgEeMCQCAQEEEBDgyQbOONQRoqMAEEvTUJAC
 // SIG // AQACAQACAQACAQACAQAwMTANBglghkgBZQMEAgEFAAQg
-// SIG // dHAILadn5FWc0PKJ1rZJavm5dWrPMZumNDAspJNnXb+g
+// SIG // 987NOIxjxU8XhBvhnAtlRW92Ais97UzAAnR+nyEFKS6g
 // SIG // gg2BMIIF/zCCA+egAwIBAgITMwAAAlKLM6r4lfM52wAA
 // SIG // AAACUjANBgkqhkiG9w0BAQsFADB+MQswCQYDVQQGEwJV
 // SIG // UzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMH
@@ -620,25 +620,25 @@ GameTest.register("ComponentTests", "item_component", async (test) => {
 // SIG // IDIwMTECEzMAAAJSizOq+JXzOdsAAAAAAlIwDQYJYIZI
 // SIG // AWUDBAIBBQCggcAwGQYJKoZIhvcNAQkDMQwGCisGAQQB
 // SIG // gjcCAQQwHAYKKwYBBAGCNwIBCzEOMAwGCisGAQQBgjcC
-// SIG // ARUwLwYJKoZIhvcNAQkEMSIEILwnPsFdq3F5GAQf5go/
-// SIG // cWdmCNopjFT7+9ccKm9tyhb6MFQGCisGAQQBgjcCAQwx
+// SIG // ARUwLwYJKoZIhvcNAQkEMSIEICHvlW/zY/0HRFNArH3Y
+// SIG // uHHsohZDO32sJP9HCJtuN3yrMFQGCisGAQQBgjcCAQwx
 // SIG // RjBEoCSAIgBNAGkAbgBlAGMAcgBhAGYAdAAgAEIAZQBk
 // SIG // AHIAbwBjAGuhHIAaaHR0cHM6Ly93d3cubWluZWNyYWZ0
-// SIG // Lm5ldC8wDQYJKoZIhvcNAQEBBQAEggEAhnKadCfHGlof
-// SIG // hmCPPTJmKm1f34DMalJ+n9zm8NE7+MKdTVvw9YvCKebo
-// SIG // hjvfULiwgD+wADucokim1JHXjA/gbJf9mV806/zME1TA
-// SIG // Ak/3zlOzkpj3Nr7JkWSoDpf87V1TTjPedqIAY/3IcbIS
-// SIG // L0AvZMCb7fC4D3n4dNFbECUG+z36MncnEkjcws96260q
-// SIG // ArRRulNrCisDXLa5XiZNY+aplyFhxufPdraQe3LFGwFy
-// SIG // fe4Zzi15sv2pQmD/VpAKBPRcHR0WOeIJMZ/Psw8Y8YTP
-// SIG // IxEN2a+pt5cjZ8ZewALe6WEKRXOKEzu8jM8wl1kxTAv1
-// SIG // RMqcdJ+u9pSq6UBPRZjNs6GCFxYwghcSBgorBgEEAYI3
+// SIG // Lm5ldC8wDQYJKoZIhvcNAQEBBQAEggEAnydDOSDpnIWH
+// SIG // N5w2fZfsELuykAi7hcInjDcAcAAgP9lEwPSVLNB+m0HD
+// SIG // rS3IkAKzh8bZUZm5GIxcta+Oa+4mKPTDTXaBs1i6+J42
+// SIG // NHAJoe8AuhufcbP7QpdcvxlRcbD4ba8EfyZEHx72whmk
+// SIG // o0KAnmWfJzt5KPI8pQVKr0djlxM9SRbAHxTMIAn0Goqe
+// SIG // kOnezFCkV0Pe3kiP8Axzi84C2dUYdjleN6nLbH5LDIiQ
+// SIG // 8mwZBRR12aLoBvwqJ39VC25fr57S7xKIp74jvEXXYSyx
+// SIG // oHExsiFmEB0YCIY+IZjfsZu6sX0bTxv12ikfAhOs7vVE
+// SIG // 0q68q9nxs0Kw64WZ8VbmBaGCFxYwghcSBgorBgEEAYI3
 // SIG // AwMBMYIXAjCCFv4GCSqGSIb3DQEHAqCCFu8wghbrAgED
 // SIG // MQ8wDQYJYIZIAWUDBAIBBQAwggFZBgsqhkiG9w0BCRAB
 // SIG // BKCCAUgEggFEMIIBQAIBAQYKKwYBBAGEWQoDATAxMA0G
-// SIG // CWCGSAFlAwQCAQUABCCtiL5GArRjFG6lce/1En6Q5jJ6
-// SIG // gCnJYZeAYL8T7eahkgIGYoZgzC/KGBMyMDIyMDYxNjIz
-// SIG // MTYwNS43MTZaMASAAgH0oIHYpIHVMIHSMQswCQYDVQQG
+// SIG // CWCGSAFlAwQCAQUABCCjUy+1klE1UUWxHA2G2KDM3YO6
+// SIG // JS83ieuNKcKwVdfEnAIGYrMqJeW3GBMyMDIyMDcwMjAw
+// SIG // Mjg1MS45NjdaMASAAgH0oIHYpIHVMIHSMQswCQYDVQQG
 // SIG // EwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UE
 // SIG // BxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENv
 // SIG // cnBvcmF0aW9uMS0wKwYDVQQLEyRNaWNyb3NvZnQgSXJl
@@ -770,46 +770,46 @@ GameTest.register("ComponentTests", "item_component", async (test) => {
 // SIG // MRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdS
 // SIG // ZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9y
 // SIG // YXRpb24xJjAkBgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0
-// SIG // YW1wIFBDQSAyMDEwMA0GCSqGSIb3DQEBBQUAAgUA5lUe
-// SIG // 4zAiGA8yMDIyMDYxNjExMTU0N1oYDzIwMjIwNjE3MTEx
-// SIG // NTQ3WjB0MDoGCisGAQQBhFkKBAExLDAqMAoCBQDmVR7j
-// SIG // AgEAMAcCAQACAjBVMAcCAQACAhJVMAoCBQDmVnBjAgEA
+// SIG // YW1wIFBDQSAyMDEwMA0GCSqGSIb3DQEBBQUAAgUA5mmF
+// SIG // zDAiGA8yMDIyMDcwMTIyNDAxMloYDzIwMjIwNzAyMjI0
+// SIG // MDEyWjB0MDoGCisGAQQBhFkKBAExLDAqMAoCBQDmaYXM
+// SIG // AgEAMAcCAQACAjTHMAcCAQACAhFlMAoCBQDmatdMAgEA
 // SIG // MDYGCisGAQQBhFkKBAIxKDAmMAwGCisGAQQBhFkKAwKg
 // SIG // CjAIAgEAAgMHoSChCjAIAgEAAgMBhqAwDQYJKoZIhvcN
-// SIG // AQEFBQADgYEAbFs6uF6/PFAVDrxvKpgYqMuwHblsYMje
-// SIG // hHyWgP3BNAtCONslQFKU0KlH7Kif9vzcIOOvKQF/lmvL
-// SIG // lT9IU+6z9qNI4Xig6cd44sMGoxikCs9t5qniMNTsriYp
-// SIG // CF5SDnh0Hu500u3aNrzGtztpbjL7dwwqL5bRSh1hARmB
-// SIG // c9h2AioxggQNMIIECQIBATCBkzB8MQswCQYDVQQGEwJV
+// SIG // AQEFBQADgYEAV0H48Jpy+CgjSGUB7pPnvhrIfYGmsB3r
+// SIG // 8zzPfH1IQIGBjxofhACB0oNjCl3SlciW/+ZgcdclcEcc
+// SIG // eu7Hv1SiHBcDDmCsL235qiWH1s/THzCms+HtXAox7GZo
+// SIG // 446hZSUkwUxgq6tGs6iEHsf3ViEj9Xf67aLphxPrkWCU
+// SIG // 1SMdBowxggQNMIIECQIBATCBkzB8MQswCQYDVQQGEwJV
 // SIG // UzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMH
 // SIG // UmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBv
 // SIG // cmF0aW9uMSYwJAYDVQQDEx1NaWNyb3NvZnQgVGltZS1T
 // SIG // dGFtcCBQQ0EgMjAxMAITMwAAAYo+OI3SDgL66AABAAAB
 // SIG // ijANBglghkgBZQMEAgEFAKCCAUowGgYJKoZIhvcNAQkD
-// SIG // MQ0GCyqGSIb3DQEJEAEEMC8GCSqGSIb3DQEJBDEiBCDb
-// SIG // vU+dqI8OFbQAkEDmSfDJzDY6cEaC0JmF1B03N/gx3TCB
+// SIG // MQ0GCyqGSIb3DQEJEAEEMC8GCSqGSIb3DQEJBDEiBCA7
+// SIG // y3AkV225M42MKtZcm/lE8sTm9WSp3/BM1YiOPFCr5TCB
 // SIG // +gYLKoZIhvcNAQkQAi8xgeowgecwgeQwgb0EIPS94Kt1
 // SIG // 30q+fvO/fzD4MbWQhQaE7RHkOH6AkjlNVCm9MIGYMIGA
 // SIG // pH4wfDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hp
 // SIG // bmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoT
 // SIG // FU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEmMCQGA1UEAxMd
 // SIG // TWljcm9zb2Z0IFRpbWUtU3RhbXAgUENBIDIwMTACEzMA
-// SIG // AAGKPjiN0g4C+ugAAQAAAYowIgQgFWqDVlpVo1Gk5sJn
-// SIG // LCDJlfODiMv2TK+9geCCyePmVRkwDQYJKoZIhvcNAQEL
-// SIG // BQAEggIATVy2tuOxVvkPKQscTrQKcNTtmK5NnmAdRB0f
-// SIG // 3017AMhsLGHeCscSYhrFIdAXcWNE7UM8JH1QoNURGZ08
-// SIG // KtdbT9fyayKyfmHF+0If5oMo70bT+gRvsXm+z+Th5+qO
-// SIG // fvIo5ZEaK+OZ07Pc/LIaltp5PYOLW3UgFmsaLzyPDtUD
-// SIG // Bx5qRPXKGLeE+R7owCninAbEGxgbcPgyZC9QM/8dyO9T
-// SIG // BGaXN5K/+kbiM81gBN/egSNCYmjpmW9gjY/i50e43uLY
-// SIG // oxLNVuzVXH6Fjk8YXe6fyBTSYZbM23wcOyCpLRC55gWD
-// SIG // +d/fdsWrVgiSEnMn3n3epu03rpxSNuKqEdgvAFwGQMeg
-// SIG // 8h/rYs0voGaigXz4SKxNMMjzn4x/CMr4V0zzdJPIDHh7
-// SIG // 7uMG3W49sQAqEttwdNRrgppwW7Y/j5yi4Pbql1bDnrHl
-// SIG // cK8I0xPfHbLjvPZJpofCWuI/68a6EyrzE1pscJ3/b2Ma
-// SIG // /GZd8U+2gMrr61YLHAs9SKYudzRD58nKJ0Hcg8p/w8T/
-// SIG // c52ZrzltgnpBgSqiLn5Cg/uUyYT5L1DSQ7s0up8CAFWt
-// SIG // ZZYq/83GPhXQDy2op1+wctkRi6VG9N8BK/0nEjsarV5Q
-// SIG // /Hyub9KmVeZ2R6wKNGqXIzbToZjb3z4G9GdzApqk3vmX
-// SIG // slQUP40tsTY6q8P1qZAcjp9KaEPExlQ=
+// SIG // AAGKPjiN0g4C+ugAAQAAAYowIgQgti7SzfE9sOI06Cbh
+// SIG // YZ3eo/3n6oLo5xCpNLWNO3O+NRowDQYJKoZIhvcNAQEL
+// SIG // BQAEggIAG4IU2Z6UCMTYrEQtFXYOvTz0Y/vZNeFcNad5
+// SIG // WN2ssvZm76sdTgpjFfIMCOptM45EBqKtyCOxw7LwudAx
+// SIG // /gja/171aYVwwGdE+YmCemjr478e/5WGp0wYBUaKcoxj
+// SIG // A+PaYOYDM71rL2HrODsVbK+kA9Mvuc2+NwYiBpRPE99G
+// SIG // PMWTqpvX2ik6tN9qd7XlmtAQMEgQJXxliG1ozBHiaBvF
+// SIG // 1+kAVOh9D8G3ipu4xp0FeI5Ocwzu3IieBhHK5yEALPJ5
+// SIG // Yvx9ydQmJwWijbuEc2ja7pPolH0hnnbAFGEpYhJSbBeC
+// SIG // VUqK+KJMQUjQDanuC6oZ5o6nn/DUpMJvOgLpPCtE/J69
+// SIG // GokCw9vI/o5PgnLWaBNG5C36Ie93whyc9Bhfd13iytKN
+// SIG // E5y5n1bHBxsLuaSF1JWS1cmjLsa1zzYDtoVQoT3g3dkU
+// SIG // yCrs41hd+zGueudPN/YUqV6KXrSksQX2Q1h5WINqid99
+// SIG // qR8ROBwHvpD80IXchqs1dCgdiZ1UWkfq/3g0HvylZXy/
+// SIG // wNi5Y0ZEJPIr2aIJClDMkO3UopXQ4wcxi03Dw13biQrm
+// SIG // cOdUXrh7GeCvsIzmWN+rwgFAdo8SghOa+e598Otvp7c3
+// SIG // PFKncdk2SAwYOF0Izxq9zgopqmo/QaT1ISQTxn0IEnLN
+// SIG // 9CdGvrxliGgHXmxzajvnvZYwcTJhbbE=
 // SIG // End signature block

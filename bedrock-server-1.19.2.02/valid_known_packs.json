@@ -56,9 +56,16 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.16.210",
+		"path" : "behavior_packs/agent_gametest",
+		"uuid" : "dba81c2c-f7b3-468e-990e-f31555ed6079",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.15",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.16.210"
+		"version" : "1.15.0"
 	},
 	
 	{
@@ -84,16 +91,16 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.15",
+		"path" : "behavior_packs/vanilla_1.16",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.15.0"
+		"version" : "1.16.0"
 	},
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.16",
+		"path" : "behavior_packs/vanilla_1.16.210",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.16.0"
+		"version" : "1.16.210"
 	},
 	
 	{
@@ -168,6 +175,13 @@
 	
 	{
 		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.19.10",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.19.10"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "behavior_packs/experimental_spectator",
 		"uuid" : "4bde72a9-966d-426b-8402-2a27965a27cb",
 		"version" : "0.0.1"
@@ -177,6 +191,15 @@
 		"file_system" : "RawPath",
 		"path" : "behavior_packs/vanilla_gametest",
 		"uuid" : "fd375b0a-4bdd-4572-9268-e55a79cf99d3",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : [ "8HB8Mnid8Ypn5WiOJeBwJ5hLbRprrS02CkPgpoHmLPI=" ],
+		"path" : "behavior_packs/editor",
+		"uuid" : "3222066e-79d0-4573-9e15-93472d32cbd5",
 		"version" : "0.0.1"
 	},
 	
