@@ -1,5 +1,6 @@
 import * as GameTest from "mojang-gametest";
-import { BlockLocation, BlockPermutation, BlockProperties, MinecraftBlockTypes, TicksPerSecond } from "mojang-minecraft";
+import { BlockLocation, BlockProperties, MinecraftBlockTypes, TicksPerSecond } from "mojang-minecraft";
+import GameTestExtensions from "./GameTestExtensions.js";
 
 const TEST_PADDING = 5;
 
@@ -74,7 +75,7 @@ GameTest.register("SculkTests", "spread_uneven", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 3, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !== undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos1 = new BlockLocation(0, 4, 0);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos1, /* faceMask (down) = */ 1, INITIAL_CHARGE_SMALL);
@@ -86,7 +87,7 @@ GameTest.register("SculkTests", "spread_uneven", (test) => {
         for (var x = 0; x < 5; ++x) {
             for (var y = 0; y < 5; ++y) {
                 for (var z = 0; z < 5; ++z) {
-                    if (test.getBlock(new BlockLocation(x, y, z)).id == "minecraft:sculk") {
+                    if (test.getBlock(new BlockLocation(x, y, z)).id ===  "minecraft:sculk") {
                         ++sculkCount;
                     }
                 }
@@ -109,7 +110,7 @@ GameTest.register("SculkTests", "spread_uneven_overcharged", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 3, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos1 = new BlockLocation(0, 4, 0);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos1, /* faceMask (down) = */ 1, INITIAL_CHARGE);
@@ -121,7 +122,7 @@ GameTest.register("SculkTests", "spread_uneven_overcharged", (test) => {
         for (var x = 0; x < 5; ++x) {
             for (var y = 0; y < 5; ++y) {
                 for (var z = 0; z < 5; ++z) {
-                    if (test.getBlock(new BlockLocation(x, y, z)).id == "minecraft:sculk") {
+                    if (test.getBlock(new BlockLocation(x, y, z)).id ===  "minecraft:sculk") {
                         ++sculkCount;
                     }
                 }
@@ -143,7 +144,7 @@ GameTest.register("SculkTests", "spread_stairway_up", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(0, 3, -1);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (south) = */ 1 << 2, INITIAL_CHARGE);
@@ -165,7 +166,7 @@ GameTest.register("SculkTests", "spread_stairway_up_unsupported", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(0, 3, -1);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (south) = */ 1 << 2, INITIAL_CHARGE);
@@ -187,7 +188,7 @@ GameTest.register("SculkTests", "spread_stairway_down", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 17, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(0, 17, -1);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (south) = */ 1 << 2, INITIAL_CHARGE);
@@ -209,7 +210,7 @@ GameTest.register("SculkTests", "spread_pillar_up", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(2, 4, 1);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (south) = */ 1 << 2, INITIAL_CHARGE);
@@ -232,7 +233,7 @@ GameTest.register("SculkTests", "vein_consume_blocks", (test) => {
     const sculkCatalystPos = new BlockLocation(4, 2, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, new BlockLocation(0, 4, 0), /* faceMask (down) = */ 1, CONSUME_ROW_CHARGE);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, new BlockLocation(0, 2, 1), /* faceMask (up) = */ 1 << 1, CONSUME_ROW_CHARGE);
@@ -245,7 +246,7 @@ GameTest.register("SculkTests", "vein_consume_blocks", (test) => {
             for (var z = 0; z < TEST_AREA_SIZE_Z; z++) {
                 const testPos = new BlockLocation(x, 3, z);
                 var blockID = test.getBlock(testPos).type.id.valueOf();
-                test.assert(blockID == "minecraft:sculk", blockID + " is expected to be consumed by sculk.");
+                test.assert(blockID ===  "minecraft:sculk", blockID + " is expected to be consumed by sculk.");
             }
         }
     }).thenSucceed();
@@ -267,7 +268,7 @@ GameTest.register("SculkTests", "vein_spread_blocks", (test) => {
     test.succeedWhen(() => {
         for (var x = 0; x < 5; ++x) {
             for (var z = 0; z < 5; ++z) {
-                const isSculk = test.getBlock(new BlockLocation(x, 3, z)).id == "minecraft:sculk" || test.getBlock(new BlockLocation(x, 4, z)).id == "minecraft:sculk_vein";
+                const isSculk = test.getBlock(new BlockLocation(x, 3, z)).id ===  "minecraft:sculk" || test.getBlock(new BlockLocation(x, 4, z)).id ===  "minecraft:sculk_vein";
                 test.assert(isSculk, "Sculk failed to spread to [" + x + ", " + z + "]!");
             }
         };
@@ -313,12 +314,12 @@ GameTest.register("SculkTests", "vein_non_spread_blocks", (test) => {
         var sculkVeinCount = 0;
         for (var x = 0; x < 5; ++x) {
             for (var z = 0; z < 5; ++z) {
-                if (test.getBlock(new BlockLocation(x, 4, z)).id == "minecraft:sculk_vein") {
+                if (test.getBlock(new BlockLocation(x, 4, z)).id ===  "minecraft:sculk_vein") {
                     ++sculkVeinCount;
                 }
             }
         };
-        test.assert(sculkVeinCount == 4, "Only 4 veins where expected to be placed, one for each mob death position!");
+        test.assert(sculkVeinCount ===  4, "Only 4 veins where expected to be placed, one for each mob death position!");
     });
 })
     .padding(TEST_PADDING)
@@ -340,13 +341,25 @@ GameTest.register("SculkTests", "vein_non_spread_fire", (test) => {
     .padding(TEST_PADDING)
     .tag(GameTest.Tags.suiteDefault);
 
+// Tests that no sculk vein is placed on a catalyst if a mob dies on top of it.
+GameTest.register("SculkTests", "vein_non_spread_catalyst", (test) => {
+    const spawnPos = new BlockLocation(2, 3, 2);
+    test.spawn("minecraft:creeper", spawnPos).kill();
+
+    test.startSequence().thenExecuteFor(TicksPerSecond * 2, () => {
+        test.assertBlockPresent(MinecraftBlockTypes.air, spawnPos);
+    }).thenSucceed();
+})
+    .padding(TEST_PADDING)
+    .tag(GameTest.Tags.suiteDefault);
+
 GameTest.register("SculkTests", "spread_under_water", (test) => {
     const INITIAL_CHARGE = 30;
 
     const sculkCatalystPos = new BlockLocation(2, 7, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(3, 6, 3);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (down) = */ 1, INITIAL_CHARGE);
@@ -363,7 +376,7 @@ GameTest.register("SculkTests", "vein_non_place_blocks", (test) => {
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     test.spawn("minecraft:creeper", new BlockLocation(1, 30, 2));
     test.spawn("minecraft:creeper", new BlockLocation(2, 30, 1));
@@ -377,8 +390,8 @@ GameTest.register("SculkTests", "vein_non_place_blocks", (test) => {
                 for (var z = 0; z < 5; z++) {
                     testPos = new BlockLocation(x, y, z);
                     var blockID = test.getBlock(testPos).type.id.valueOf();
-                    test.assert(blockID != "minecraft:sculk", "Sculk should not have spread.");
-                    test.assert(blockID != "minecraft:sculk_vein", "Sculk Vein should not have spread.");
+                    test.assert(blockID !==  "minecraft:sculk", "Sculk should not have spread.");
+                    test.assert(blockID !==  "minecraft:sculk_vein", "Sculk Vein should not have spread.");
                 }
             }
         }
@@ -394,28 +407,48 @@ GameTest.register("SculkTests", "charge_cap", (test) => {
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const mobSpawnLocation = new BlockLocation(2, 4, 2);
     test.spawn("minecraft:creeper", mobSpawnLocation).kill();
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 3, 2), sculkSpreader.maxCharge - MERGEABLE_EXPERIENCE_AMOUNT);
 
     test.startSequence().thenExecuteAfter(2, () => {
-        test.assert(sculkSpreader.getNumberOfCursors() == 1, "Charges should merge up to maximum.");
+        test.assert(sculkSpreader.getNumberOfCursors() ===  1, "Charges should merge up to maximum.");
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
     }).thenExecuteAfter(2, () => {
-        test.assert(sculkSpreader.getNumberOfCursors() == 1, "Charges should merge up to maximum.");
+        test.assert(sculkSpreader.getNumberOfCursors() ===  1, "Charges should merge up to maximum.");
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
     }).thenExecuteAfter(2, () => {
-        test.assert(sculkSpreader.getNumberOfCursors() == 2, "Charges should not merge above maximum.");
+        test.assert(sculkSpreader.getNumberOfCursors() ===  2, "Charges should not merge above maximum.");
     }).thenSucceed();
 
+})
+    .padding(TEST_PADDING)
+    .tag(GameTest.Tags.suiteDefault);
+
+// Tests that on an experienceless mob death, a catalyst blooms but does not get a cursor.
+GameTest.register("SculkTests", "catalyst_no_xp_death", (test) => {
+    const sculkCatalystPos = new BlockLocation(2, 2, 2);
+    test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
+    const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
+
+    const mobSpawnLocation = sculkCatalystPos.offset(0, 1, 0);
+    test.spawn("minecraft:villager_v2<minecraft:spawn_farmer>", mobSpawnLocation).kill();
+
+    test.startSequence().thenExecuteAfter(2, () => {
+        const numberOfCursors = sculkSpreader.getNumberOfCursors();
+        test.assert(numberOfCursors ===  0, "Expected total number of cursors to be 0. Actual amount: " + numberOfCursors);
+        const testEx = new GameTestExtensions(test);
+        testEx.assertBlockProperty("bloom", 1, sculkCatalystPos);
+    }).thenSucceed();
 })
     .padding(TEST_PADDING)
     .tag(GameTest.Tags.suiteDefault);
@@ -428,7 +461,7 @@ GameTest.register("SculkTests", "multiple_catalysts_one_death", (test) => {
         new BlockLocation(4, 2, 4),
         new BlockLocation(0, 2, 4)];
 
-    catalystPositions.forEach(location => test.assert(test.getSculkSpreader(location) != undefined, "Failed to find sculk catalyst."));
+    catalystPositions.forEach(location => test.assert(test.getSculkSpreader(location) !==  undefined, "Failed to find sculk catalyst."));
 
     const closestCatalystPosition = catalystPositions[0];
     const mobSpawnLocation = closestCatalystPosition.offset(0, 2, 0);
@@ -437,9 +470,9 @@ GameTest.register("SculkTests", "multiple_catalysts_one_death", (test) => {
     test.startSequence().thenExecuteAfter(2, () => {
         let numberOfCursors = 0;
         catalystPositions.forEach(position => numberOfCursors += test.getSculkSpreader(position).getNumberOfCursors());
-        test.assert(numberOfCursors == 1, "Expected total number of cursors to be 1. Actual amount: " + numberOfCursors);
+        test.assert(numberOfCursors ===  1, "Expected total number of cursors to be 1. Actual amount: " + numberOfCursors);
         const closestCatalystCursors = test.getSculkSpreader(closestCatalystPosition).getNumberOfCursors();
-        test.assert(closestCatalystCursors == 1, "Expected the closest sculk catalyst to get the cursor.");
+        test.assert(closestCatalystCursors ===  1, "Expected the closest sculk catalyst to get the cursor.");
     }).thenSucceed();
 })
     .padding(TEST_PADDING)
@@ -455,14 +488,14 @@ GameTest.register("SculkTests", "multiple_catalysts_multiple_deaths", (test) => 
         new BlockLocation(0, 2, 4)];
 
     catalystPositions.forEach(location => {
-        test.assert(test.getSculkSpreader(location) != undefined, "Failed to find sculk catalyst.");
+        test.assert(test.getSculkSpreader(location) !==  undefined, "Failed to find sculk catalyst.");
         test.spawn("minecraft:creeper", location.offset(0, 2, 0)).kill();
     });
 
     test.startSequence().thenExecuteAfter(2, () => {
         let numberOfCursors = 0;
         catalystPositions.forEach(position => numberOfCursors += test.getSculkSpreader(position).getNumberOfCursors());
-        test.assert(numberOfCursors == 4, "Expected total number of cursors to be 4. Actual amount: " + numberOfCursors);
+        test.assert(numberOfCursors ===  4, "Expected total number of cursors to be 4. Actual amount: " + numberOfCursors);
     }).thenSucceed();
 })
     .padding(TEST_PADDING)
@@ -474,13 +507,13 @@ GameTest.register("SculkTests", "charge_decay_sculk", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 4, 2), INITIAL_CHARGE);
 
     test.succeedWhen(() => {
         const totalCharge = sculkSpreader.getTotalCharge();
-        test.assert(totalCharge == FINAL_CHARGE, "Charge should drop to " + FINAL_CHARGE + ". Total charge: " + totalCharge);
+        test.assert(totalCharge ===  FINAL_CHARGE, "Charge should drop to " + FINAL_CHARGE + ". Total charge: " + totalCharge);
     });
 })
     .maxAttempts(5)
@@ -494,14 +527,14 @@ GameTest.register("SculkTests", "charge_decay_sculk_vein", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(2, 6, 2);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (down) = */ 1, INITIAL_CHARGE);
 
     test.succeedWhen(() => {
         const totalCharge = sculkSpreader.getTotalCharge();
-        test.assert(totalCharge == FINAL_CHARGE, "Charge should drop to " + FINAL_CHARGE + ". Total charge: " + totalCharge);
+        test.assert(totalCharge ===  FINAL_CHARGE, "Charge should drop to " + FINAL_CHARGE + ". Total charge: " + totalCharge);
     });
 })
     .maxAttempts(5)
@@ -515,7 +548,7 @@ GameTest.register("SculkTests", "sculk_growth_spawning", (test) => {
     const sculkCatalystPos = new BlockLocation(4, 4, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     for (var z = 1; z < 4; z++) {
         const spreadStartPos = new BlockLocation(1, 4, z);
@@ -550,7 +583,7 @@ GameTest.register("SculkTests", "sculk_growth_spawning", (test) => {
             }
         }
 
-        test.assert(nearGrowths == 0, "No growths should have spawned near the catalyst.");
+        test.assert(nearGrowths ===  0, "No growths should have spawned near the catalyst.");
     });
 })
     .maxTicks(TicksPerSecond * 40)
@@ -563,7 +596,7 @@ GameTest.register("SculkTests", "charge_forced_direction", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(1, 3, 2), INITIAL_CHARGE);
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(1, 13, 2), INITIAL_CHARGE);
@@ -590,7 +623,7 @@ GameTest.register("SculkTests", "charge_redirection", (test) => {
 
     const sculkCatalystPos = new BlockLocation(5, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(4, 5, 2), INITIAL_CHARGE);
 
     test.startSequence().thenExecuteAfter(TicksPerSecond * 2, () => {
@@ -618,7 +651,7 @@ GameTest.register("SculkTests", "charge_merging", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 5, 0), INITIAL_CHARGE);
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 5, 4), INITIAL_CHARGE);
@@ -628,7 +661,7 @@ GameTest.register("SculkTests", "charge_merging", (test) => {
     test.succeedWhen(() => {
         const totalCharge = sculkSpreader.getTotalCharge();
         const numberOfCursors = sculkSpreader.getNumberOfCursors();
-        test.assert(numberOfCursors == 1, "There are " + numberOfCursors + " cursors, should be only one");
+        test.assert(numberOfCursors ===  1, "There are " + numberOfCursors + " cursors, should be only one");
         test.assert(totalCharge >= MIN_RESIDUAL_CHARGE, "Total charge of + " + INITIAL_CHARGE * 4 + " + should be roughly preserved, current charge: " + totalCharge);
     });
 })
@@ -641,18 +674,18 @@ GameTest.register("SculkTests", "charge_in_air_disappear", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 4, 2), INITIAL_CHARGE);
 
     const charge = sculkSpreader.getTotalCharge();
-    test.assert(charge == INITIAL_CHARGE, "Total charge of " + INITIAL_CHARGE + " should be still present at this point.");
+    test.assert(charge ===  INITIAL_CHARGE, "Total charge of " + INITIAL_CHARGE + " should be still present at this point.");
 
     test.setBlockType(MinecraftBlockTypes.air, new BlockLocation(2, 4, 2));
 
     test.startSequence().thenExecuteAfter(3, () => {
         const numberOfCursors = sculkSpreader.getNumberOfCursors();
-        test.assert(numberOfCursors == 0, "The cursor did not disappear in 3 ticks despite having no substrate.");
+        test.assert(numberOfCursors ===  0, "The cursor did not disappear in 3 ticks despite having no substrate.");
     }).thenSucceed();
 })
     .padding(TEST_PADDING)
@@ -663,12 +696,12 @@ GameTest.register("SculkTests", "charge_in_air_jump", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 4, 2), INITIAL_CHARGE);
 
     const charge = sculkSpreader.getTotalCharge();
-    test.assert(charge == INITIAL_CHARGE, "Total charge of " + INITIAL_CHARGE + " should be still present at this point.");
+    test.assert(charge ===  INITIAL_CHARGE, "Total charge of " + INITIAL_CHARGE + " should be still present at this point.");
 
     test.setBlockType(MinecraftBlockTypes.air, new BlockLocation(2, 4, 2));
     test.setBlockType(MinecraftBlockTypes.sculk, new BlockLocation(2, 5, 2));
@@ -711,7 +744,7 @@ GameTest.register("SculkTests", "spread_to_moving_blocks", (test) => {
         var sculkCount = 0;
         for (var x = 1; x < 8; x++) {
             for (var z = 1; z < 4; z++) {
-                if (test.getBlock(new BlockLocation(x, 3, z)).id == "minecraft:sculk") {
+                if (test.getBlock(new BlockLocation(x, 3, z)).id ===  "minecraft:sculk") {
                     ++sculkCount;
                 }
             }
@@ -730,7 +763,7 @@ GameTest.register("SculkTests", "spread_on_player_death", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const grassPos = new BlockLocation(1, 4, 2);
     const grassWithTallGrassPos = new BlockLocation(3, 4, 2);
@@ -751,35 +784,35 @@ GameTest.register("SculkTests", "spread_on_player_death", (test) => {
     .tag(GameTest.Tags.suiteDefault);
 
 // SIG // Begin signature block
-// SIG // MIInxwYJKoZIhvcNAQcCoIInuDCCJ7QCAQExDzANBglg
+// SIG // MIInvQYJKoZIhvcNAQcCoIInrjCCJ6oCAQExDzANBglg
 // SIG // hkgBZQMEAgEFADB3BgorBgEEAYI3AgEEoGkwZzAyBgor
 // SIG // BgEEAYI3AgEeMCQCAQEEEBDgyQbOONQRoqMAEEvTUJAC
 // SIG // AQACAQACAQACAQACAQAwMTANBglghkgBZQMEAgEFAAQg
-// SIG // MQpf8/eQ6DFQafDjrxqH9uY7AnY4fhxgQzuCNy4h39Kg
-// SIG // gg2BMIIF/zCCA+egAwIBAgITMwAAAlKLM6r4lfM52wAA
-// SIG // AAACUjANBgkqhkiG9w0BAQsFADB+MQswCQYDVQQGEwJV
+// SIG // DQyuL1iprkXmQbEhOEEd6mM7jbkzgJAHb4Mx43BQo4ig
+// SIG // gg2BMIIF/zCCA+egAwIBAgITMwAAAsyOtZamvdHJTgAA
+// SIG // AAACzDANBgkqhkiG9w0BAQsFADB+MQswCQYDVQQGEwJV
 // SIG // UzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMH
 // SIG // UmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBv
 // SIG // cmF0aW9uMSgwJgYDVQQDEx9NaWNyb3NvZnQgQ29kZSBT
-// SIG // aWduaW5nIFBDQSAyMDExMB4XDTIxMDkwMjE4MzI1OVoX
-// SIG // DTIyMDkwMTE4MzI1OVowdDELMAkGA1UEBhMCVVMxEzAR
+// SIG // aWduaW5nIFBDQSAyMDExMB4XDTIyMDUxMjIwNDYwMVoX
+// SIG // DTIzMDUxMTIwNDYwMVowdDELMAkGA1UEBhMCVVMxEzAR
 // SIG // BgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1v
 // SIG // bmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlv
 // SIG // bjEeMBwGA1UEAxMVTWljcm9zb2Z0IENvcnBvcmF0aW9u
 // SIG // MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
-// SIG // 0OTPj7P1+wTbr+Qf9COrqA8I9DSTqNSq1UKju4IEV3HJ
-// SIG // Jck61i+MTEoYyKLtiLG2Jxeu8F81QKuTpuKHvi380gzs
-// SIG // 43G+prNNIAaNDkGqsENQYo8iezbw3/NCNX1vTi++irdF
-// SIG // qXNs6xoc3B3W+7qT678b0jTVL8St7IMO2E7d9eNdL6RK
-// SIG // fMnwRJf4XfGcwL+OwwoCeY9c5tvebNUVWRzaejKIkBVT
-// SIG // hApuAMCtpdvIvmBEdSTuCKZUx+OLr81/aEZyR2jL1s2R
-// SIG // KaMz8uIzTtgw6m3DbOM4ewFjIRNT1hVQPghyPxJ+ZwEr
-// SIG // wry5rkf7fKuG3PF0fECGSUEqftlOptpXTQIDAQABo4IB
+// SIG // ok2x7OvGwA7zbnfezc3HT9M4dJka+FaQ7+vCqG40Bcm1
+// SIG // QLlYIiDX/Whts0LVijaOvtl9iMeuShnAV7mchItKAVAA
+// SIG // BpyHuTuav2NCI9FsA8jFmlWndk3uK9RInNx1h1H4ojYx
+// SIG // dBExyoN6muwwslKsLEfauUml7h5WAsDPpufTZd4yp2Jy
+// SIG // iy384Zdd8CJlfQxfDe+gDZEciugWKHPSOoRxdjAk0GFm
+// SIG // 0OH14MyoYM4+M3mm1oH7vmSQohS5KIL3NEVW9Mdw7csT
+// SIG // G5f93uORLvrJ/8ehFcGyWVb7UGHJnRhdcgGIbfiZzZls
+// SIG // AMS/DIBzM8RHKGNUNSbbLYmN/rt7pRjL4QIDAQABo4IB
 // SIG // fjCCAXowHwYDVR0lBBgwFgYKKwYBBAGCN0wIAQYIKwYB
-// SIG // BQUHAwMwHQYDVR0OBBYEFDWSWhFBi9hrsLe2TgLuHnxG
-// SIG // F3nRMFAGA1UdEQRJMEekRTBDMSkwJwYDVQQLEyBNaWNy
+// SIG // BQUHAwMwHQYDVR0OBBYEFIi4R40ylsyKlSKfrDNqzhx9
+// SIG // da30MFAGA1UdEQRJMEekRTBDMSkwJwYDVQQLEyBNaWNy
 // SIG // b3NvZnQgT3BlcmF0aW9ucyBQdWVydG8gUmljbzEWMBQG
-// SIG // A1UEBRMNMjMwMDEyKzQ2NzU5NzAfBgNVHSMEGDAWgBRI
+// SIG // A1UEBRMNMjMwMDEyKzQ3MDUyOTAfBgNVHSMEGDAWgBRI
 // SIG // bmTlUAXTgqoXNzcitW2oynUClTBUBgNVHR8ETTBLMEmg
 // SIG // R6BFhkNodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtp
 // SIG // b3BzL2NybC9NaWNDb2RTaWdQQ0EyMDExXzIwMTEtMDct
@@ -787,22 +820,22 @@ GameTest.register("SculkTests", "spread_on_player_death", (test) => {
 // SIG // AoZFaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9w
 // SIG // cy9jZXJ0cy9NaWNDb2RTaWdQQ0EyMDExXzIwMTEtMDct
 // SIG // MDguY3J0MAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQEL
-// SIG // BQADggIBABZJN7ksZExAYdTbQJewYryBLAFnYF9amfhH
-// SIG // WTGG0CmrGOiIUi10TMRdQdzinUfSv5HHKZLzXBpfA+2M
-// SIG // mEuJoQlDAUflS64N3/D1I9/APVeWomNvyaJO1mRTgJoz
-// SIG // 0TTRp8noO5dJU4k4RahPtmjrOvoXnoKgHXpRoDSSkRy1
-// SIG // kboRiriyMOZZIMfSsvkL2a5/w3YvLkyIFiqfjBhvMWOj
-// SIG // wb744LfY0EoZZz62d1GPAb8Muq8p4VwWldFdE0y9IBMe
-// SIG // 3ofytaPDImq7urP+xcqji3lEuL0x4fU4AS+Q7cQmLq12
-// SIG // 0gVbS9RY+OPjnf+nJgvZpr67Yshu9PWN0Xd2HSY9n9xi
-// SIG // au2OynVqtEGIWrSoQXoOH8Y4YNMrrdoOmjNZsYzT6xOP
-// SIG // M+h1gjRrvYDCuWbnZXUcOGuOWdOgKJLaH9AqjskxK76t
-// SIG // GI6BOF6WtPvO0/z1VFzan+2PqklO/vS7S0LjGEeMN3Ej
-// SIG // 47jbrLy3/YAZ3IeUajO5Gg7WFg4C8geNhH7MXjKsClsA
-// SIG // Pk1YtB61kan0sdqJWxOeoSXBJDIzkis97EbrqRQl91K6
-// SIG // MmH+di/tolU63WvF1nrDxutjJ590/ALi383iRbgG3zkh
-// SIG // EceyBWTvdlD6FxNbhIy+bJJdck2QdzLm4DgOBfCqETYb
-// SIG // 4hQBEk/pxvHPLiLG2Xm9PEnmEDKo1RJpMIIHejCCBWKg
+// SIG // BQADggIBAHgPA7DgB0udzEyB2LvG216zuskLUQ+iX8jF
+// SIG // nl2i7tzXPDw5xXNXn2KvxdzBsf2osDW3LCdjFOwSjVkz
+// SIG // +SUFQQNhjSHkd5knF6pzrL9V6lz72XiEg1Vi2gUM3HiL
+// SIG // XSMIKOgdd78ZZJEmDLwdA692MO/1vVOFpOSv0QzpyBr5
+// SIG // iqiotwMMsZVdZqXn8u9vRSmlk+3nQXdyOPoZXTGPLHXw
+// SIG // z41kbSc4zI12bONTlDsLR3HD2s44wuyp3c72R8f9FVi/
+// SIG // J9DU/+NOL37Z1yonzGZEuKdrAd6CvupAnLMlrIEv93mB
+// SIG // sNRXuDDp4p9UYYK1taxzzgyUxgFDpluMHN0Oiiq9s73u
+// SIG // 7DA2XvbX8paJz8IZPe9a1/KhsOi5Kxhb99SCXiUnv2lG
+// SIG // xnVAz5G6wAW1bzxJYKI+Xj90RKseY3X5EMO7TnVpIZ9I
+// SIG // w1IdrkHp/QLY90ZCch7kdBlLCVTFhSXZCDv4BcM6DhpR
+// SIG // zbJsb6QDVfOv9aoG9aGV3a1EacyaedzLA2gWP6cTnCdA
+// SIG // r4OrlrN5EFoCpOWgc77F/eQc3SLR06VTLVT1uKuNVxL2
+// SIG // xZlD9Z+qC+a3TXa0zI/x1zEZNSgpLGsdVcaN6r/td3Ar
+// SIG // GQGkDWiAL7eS75LIWZA2SD//9B56uzZ1nmEd8+KBYsPT
+// SIG // dp922/W2kFrlj7MBtA6vWE/ZG/grOKiCMIIHejCCBWKg
 // SIG // AwIBAgIKYQ6Q0gAAAAAAAzANBgkqhkiG9w0BAQsFADCB
 // SIG // iDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0
 // SIG // b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1p
@@ -860,204 +893,204 @@ GameTest.register("SculkTests", "spread_on_player_death", (test) => {
 // SIG // oqKfenoi+kiVH6v7RyOA9Z74v2u3S5fi63V4GuzqN5l5
 // SIG // GEv/1rMjaHXmr/r8i+sLgOppO6/8MO0ETI7f33VtY5E9
 // SIG // 0Z1WTk+/gFcioXgRMiF670EKsT/7qMykXcGhiJtXcVZO
-// SIG // SEXAQsmbdlsKgEhr/Xmfwb1tbWrJUnMTDXpQzTGCGZ4w
-// SIG // ghmaAgEBMIGVMH4xCzAJBgNVBAYTAlVTMRMwEQYDVQQI
+// SIG // SEXAQsmbdlsKgEhr/Xmfwb1tbWrJUnMTDXpQzTGCGZQw
+// SIG // ghmQAgEBMIGVMH4xCzAJBgNVBAYTAlVTMRMwEQYDVQQI
 // SIG // EwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4w
 // SIG // HAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xKDAm
 // SIG // BgNVBAMTH01pY3Jvc29mdCBDb2RlIFNpZ25pbmcgUENB
-// SIG // IDIwMTECEzMAAAJSizOq+JXzOdsAAAAAAlIwDQYJYIZI
+// SIG // IDIwMTECEzMAAALMjrWWpr3RyU4AAAAAAswwDQYJYIZI
 // SIG // AWUDBAIBBQCggcAwGQYJKoZIhvcNAQkDMQwGCisGAQQB
 // SIG // gjcCAQQwHAYKKwYBBAGCNwIBCzEOMAwGCisGAQQBgjcC
-// SIG // ARUwLwYJKoZIhvcNAQkEMSIEIOQrzOCbj2sEYEYZMjYf
-// SIG // kVn6Y3xpnke0E6r2EST7xDCOMFQGCisGAQQBgjcCAQwx
+// SIG // ARUwLwYJKoZIhvcNAQkEMSIEIG1e4OPzo5aH0X4ZV3Ln
+// SIG // e1ggMEc2Vyu2pkZS8Q3+1tH+MFQGCisGAQQBgjcCAQwx
 // SIG // RjBEoCSAIgBNAGkAbgBlAGMAcgBhAGYAdAAgAEIAZQBk
 // SIG // AHIAbwBjAGuhHIAaaHR0cHM6Ly93d3cubWluZWNyYWZ0
-// SIG // Lm5ldC8wDQYJKoZIhvcNAQEBBQAEggEAX7sdFKcAHpUa
-// SIG // TvXuZDCD1eKwpmkGisH1aB3LA5btUngGJmYzfCGrEK+B
-// SIG // IGmgyUI9LgIJi28laTr92647t5DxOvLe1IyIAbHncWcz
-// SIG // eGL75fVVYDrbkhUX19B9+YH0LMO1fmJPWXCrjvjPpbNb
-// SIG // ed+Q8zQ4LRXyW029kP9vjrfZHsmnXSsY6B9uhQHX91Bi
-// SIG // urZnc16rX0DpGNcEpyx2zR9yPYmkPMixeQ0RSMvlnmcU
-// SIG // RmFUmQ4O+s+H5j4uYNEKTTMtsMdYxOBWdZgAvkRQnvpE
-// SIG // +dbAPoAr0uuqGPhFpjQq4iFWfTj4rWN/8efxSAELh+eS
-// SIG // OHmIBlxMeNo+YUIkvvLz06GCFxYwghcSBgorBgEEAYI3
-// SIG // AwMBMYIXAjCCFv4GCSqGSIb3DQEHAqCCFu8wghbrAgED
-// SIG // MQ8wDQYJYIZIAWUDBAIBBQAwggFZBgsqhkiG9w0BCRAB
-// SIG // BKCCAUgEggFEMIIBQAIBAQYKKwYBBAGEWQoDATAxMA0G
-// SIG // CWCGSAFlAwQCAQUABCCvdenEVuOTJF3WOD57BngerhTi
-// SIG // KVaLmRekdbKnJT/9JQIGYrMqJeWqGBMyMDIyMDcwMjAw
-// SIG // Mjg1MC41ODZaMASAAgH0oIHYpIHVMIHSMQswCQYDVQQG
+// SIG // Lm5ldC8wDQYJKoZIhvcNAQEBBQAEggEAm5vol/VTjStU
+// SIG // CaOzI4y1xsV4ZzyAM4nWzhAHRF5OiNs4jUpHT9YxdqVg
+// SIG // D32DZS0Cnq5Q8wrjl4DvOuNw+/5KQWtx8MT1FUgFnbNc
+// SIG // /5ivwlho2IDQDUKR72JYBHYMG5BIEMm7kjubW3eOyU4/
+// SIG // AEUOxGE29LfX74oRMpfIPUQ1XcSVG9F3bxWVnaiJV3cx
+// SIG // wGPto2DrvsNpVOuyZkRjg9k/h6v9Xz0jobHKqh/+b+6k
+// SIG // AwIRwI5mQeOKET+30tZmm8TMAKvsfQRtmPfbBcL/ppuX
+// SIG // AvjapRtszNWGdcMocVRaZpff84W1vvFeBddxiM3KLYkC
+// SIG // YcNINA9E5PcWZ+YAqMtsw6GCFwwwghcIBgorBgEEAYI3
+// SIG // AwMBMYIW+DCCFvQGCSqGSIb3DQEHAqCCFuUwghbhAgED
+// SIG // MQ8wDQYJYIZIAWUDBAIBBQAwggFVBgsqhkiG9w0BCRAB
+// SIG // BKCCAUQEggFAMIIBPAIBAQYKKwYBBAGEWQoDATAxMA0G
+// SIG // CWCGSAFlAwQCAQUABCCdZhqBal8XEIYIvO+4J3PqFzx2
+// SIG // hOMsp4hKAycumYQVLgIGYvt1pJH1GBMyMDIyMDgxODAw
+// SIG // MTk1Ny44NTRaMASAAgH0oIHUpIHRMIHOMQswCQYDVQQG
 // SIG // EwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UE
 // SIG // BxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENv
-// SIG // cnBvcmF0aW9uMS0wKwYDVQQLEyRNaWNyb3NvZnQgSXJl
-// SIG // bGFuZCBPcGVyYXRpb25zIExpbWl0ZWQxJjAkBgNVBAsT
-// SIG // HVRoYWxlcyBUU1MgRVNOOjE3OUUtNEJCMC04MjQ2MSUw
-// SIG // IwYDVQQDExxNaWNyb3NvZnQgVGltZS1TdGFtcCBTZXJ2
-// SIG // aWNloIIRZTCCBxQwggT8oAMCAQICEzMAAAGKPjiN0g4C
-// SIG // +ugAAQAAAYowDQYJKoZIhvcNAQELBQAwfDELMAkGA1UE
-// SIG // BhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNV
-// SIG // BAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBD
-// SIG // b3Jwb3JhdGlvbjEmMCQGA1UEAxMdTWljcm9zb2Z0IFRp
-// SIG // bWUtU3RhbXAgUENBIDIwMTAwHhcNMjExMDI4MTkyNzQy
-// SIG // WhcNMjMwMTI2MTkyNzQyWjCB0jELMAkGA1UEBhMCVVMx
-// SIG // EzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1Jl
-// SIG // ZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3Jh
-// SIG // dGlvbjEtMCsGA1UECxMkTWljcm9zb2Z0IElyZWxhbmQg
-// SIG // T3BlcmF0aW9ucyBMaW1pdGVkMSYwJAYDVQQLEx1UaGFs
-// SIG // ZXMgVFNTIEVTTjoxNzlFLTRCQjAtODI0NjElMCMGA1UE
-// SIG // AxMcTWljcm9zb2Z0IFRpbWUtU3RhbXAgU2VydmljZTCC
-// SIG // AiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBALf/
-// SIG // rrehgwMgGb3oAYWoFndBqKk/JRRzHqaFjTizzxBKC7sm
-// SIG // uF95/iteBb5WcBZisKmqegfuhJCE0o5HnE0gekEQOJIr
-// SIG // 3ScnZS7yq4PLnbQbuuyyso0KsEcw0E0YRAsaVN9LXQRP
-// SIG // wHsj/eZO6p3YSLvzqU+EBshiVIjA5ZmQIgz2ORSZIrVI
-// SIG // Br8DAR8KICc/BVRARZ1YgFEUyeJAQ4lOqaW7+DyPe/r0
-// SIG // IabKQyvvN4GsmokQt4DUxst4jonuj7JdN3L2CIhXACUT
-// SIG // +DtEZHhZb/0kKKJs9ybbDHfaKEv1ztL0jfYdg1SjjTI2
-// SIG // hToJzeUZOYgqsJp+qrJnvoWqEf06wgUtM1417Fk4JJY1
-// SIG // Abbde1AW1vES/vSzcN3IzyfBGEYJTDVwmCzOhswg1xLx
-// SIG // PU//7AL/pNXPOLZqImQ2QagYK/0ry/oFbDs9xKA2UNuq
-// SIG // k2tWxJ/56cTJl3LaGUnvEkQ6oCtCVFoYyl4J8mjgAxAf
-// SIG // hbXyIvo3XFCW6T7QC+JFr1UkSoqVb/DBLmES3sVxAxAY
-// SIG // vleLXygKWYROIGtKfkAomsBywWTaI91EDczOUFZhmotz
-// SIG // J0BW2ZIam1A8qaPb2lhHlXjt+SX3S1o8EYLzF91SmS+e
-// SIG // 3e45kY4lZZbl42RS8fq4SS+yWFabTj7RdTALTGJaejro
-// SIG // JzqRvuFuDBh6o+2GHz9FAgMBAAGjggE2MIIBMjAdBgNV
-// SIG // HQ4EFgQUI9pD2P1sGdSXrqdJR4Q+MZBpJAMwHwYDVR0j
-// SIG // BBgwFoAUn6cVXQBeYl2D9OXSZacbUzUZ6XIwXwYDVR0f
-// SIG // BFgwVjBUoFKgUIZOaHR0cDovL3d3dy5taWNyb3NvZnQu
-// SIG // Y29tL3BraW9wcy9jcmwvTWljcm9zb2Z0JTIwVGltZS1T
-// SIG // dGFtcCUyMFBDQSUyMDIwMTAoMSkuY3JsMGwGCCsGAQUF
-// SIG // BwEBBGAwXjBcBggrBgEFBQcwAoZQaHR0cDovL3d3dy5t
-// SIG // aWNyb3NvZnQuY29tL3BraW9wcy9jZXJ0cy9NaWNyb3Nv
-// SIG // ZnQlMjBUaW1lLVN0YW1wJTIwUENBJTIwMjAxMCgxKS5j
-// SIG // cnQwDAYDVR0TAQH/BAIwADATBgNVHSUEDDAKBggrBgEF
-// SIG // BQcDCDANBgkqhkiG9w0BAQsFAAOCAgEAxfTBErD1w3kb
-// SIG // XxaNX+e+Yj3xfQEVm3rrjXzOfNyH08X82X9nb/5ntwzY
-// SIG // vynDTRJ0dUym2bRuy7INHMv6SiBEDiRtn2GlsCCCmMLs
-// SIG // gySNkOJFYuZs21f9Aufr0ELEHAr37DPCuV9n34nyYu7a
-// SIG // nhtK+fAo4MHu8QWL4Lj5o1DccE1rxI2SD36Y1VKGjwpe
-// SIG // qqrNHhVG+23C4c0xBGAZwI/DBDYYj+SCXeD6eZRah07a
-// SIG // XnOu2BZhrjv7iAP04zwX3LTOZFCPrs38of8iHbQzbZCM
-// SIG // /nv8Zl0hYYkBEdLgY0aG0GVenPtEzbb0TS2slOLuxHpH
-// SIG // ezmg180EdEblhmkosLTel3Pz6DT9K3sxujr3MqMNajKF
-// SIG // JFBEO6qg9EKvEBcCtAygnWUibcgSjAaY1GApzVGW2L00
-// SIG // 1puA1yuUWIH9t21QSVuF6OcOPdBx6OE41jas9ez6j8jA
-// SIG // k5zPB3AKk5z3jBNHT2L23cMwzIG7psnWyWqv9OhSJpCe
-// SIG // yl7PY8ag4hNj03mJ2o/Np+kP/z6mx7scSZsEDuH83ToF
-// SIG // agBJBtVw5qaVSlv6ycQTdyMcla+kD/XIWNjGFWtG2wAi
-// SIG // Nnb1PkdkCZROQI6DCsuvFiNaZhU9ySga62nKcuh1Ixq7
-// SIG // Vfv9VOdm66xJQpVcuRW/PlGVmS6fNnLgs7STDEqlvpD+
-// SIG // c8lQUryzPuAwggdxMIIFWaADAgECAhMzAAAAFcXna54C
-// SIG // m0mZAAAAAAAVMA0GCSqGSIb3DQEBCwUAMIGIMQswCQYD
-// SIG // VQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4G
-// SIG // A1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0
-// SIG // IENvcnBvcmF0aW9uMTIwMAYDVQQDEylNaWNyb3NvZnQg
-// SIG // Um9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkgMjAxMDAe
-// SIG // Fw0yMTA5MzAxODIyMjVaFw0zMDA5MzAxODMyMjVaMHwx
-// SIG // CzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9u
-// SIG // MRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNy
-// SIG // b3NvZnQgQ29ycG9yYXRpb24xJjAkBgNVBAMTHU1pY3Jv
-// SIG // c29mdCBUaW1lLVN0YW1wIFBDQSAyMDEwMIICIjANBgkq
-// SIG // hkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA5OGmTOe0ciEL
-// SIG // eaLL1yR5vQ7VgtP97pwHB9KpbE51yMo1V/YBf2xK4OK9
-// SIG // uT4XYDP/XE/HZveVU3Fa4n5KWv64NmeFRiMMtY0Tz3cy
-// SIG // wBAY6GB9alKDRLemjkZrBxTzxXb1hlDcwUTIcVxRMTeg
-// SIG // Cjhuje3XD9gmU3w5YQJ6xKr9cmmvHaus9ja+NSZk2pg7
-// SIG // uhp7M62AW36MEBydUv626GIl3GoPz130/o5Tz9bshVZN
-// SIG // 7928jaTjkY+yOSxRnOlwaQ3KNi1wjjHINSi947SHJMPg
-// SIG // yY9+tVSP3PoFVZhtaDuaRr3tpK56KTesy+uDRedGbsoy
-// SIG // 1cCGMFxPLOJiss254o2I5JasAUq7vnGpF1tnYN74kpEe
-// SIG // HT39IM9zfUGaRnXNxF803RKJ1v2lIH1+/NmeRd+2ci/b
-// SIG // fV+AutuqfjbsNkz2K26oElHovwUDo9Fzpk03dJQcNIIP
-// SIG // 8BDyt0cY7afomXw/TNuvXsLz1dhzPUNOwTM5TI4CvEJo
-// SIG // LhDqhFFG4tG9ahhaYQFzymeiXtcodgLiMxhy16cg8ML6
-// SIG // EgrXY28MyTZki1ugpoMhXV8wdJGUlNi5UPkLiWHzNgY1
-// SIG // GIRH29wb0f2y1BzFa/ZcUlFdEtsluq9QBXpsxREdcu+N
-// SIG // +VLEhReTwDwV2xo3xwgVGD94q0W29R6HXtqPnhZyacau
-// SIG // e7e3PmriLq0CAwEAAaOCAd0wggHZMBIGCSsGAQQBgjcV
-// SIG // AQQFAgMBAAEwIwYJKwYBBAGCNxUCBBYEFCqnUv5kxJq+
-// SIG // gpE8RjUpzxD/LwTuMB0GA1UdDgQWBBSfpxVdAF5iXYP0
-// SIG // 5dJlpxtTNRnpcjBcBgNVHSAEVTBTMFEGDCsGAQQBgjdM
-// SIG // g30BATBBMD8GCCsGAQUFBwIBFjNodHRwOi8vd3d3Lm1p
-// SIG // Y3Jvc29mdC5jb20vcGtpb3BzL0RvY3MvUmVwb3NpdG9y
-// SIG // eS5odG0wEwYDVR0lBAwwCgYIKwYBBQUHAwgwGQYJKwYB
-// SIG // BAGCNxQCBAweCgBTAHUAYgBDAEEwCwYDVR0PBAQDAgGG
-// SIG // MA8GA1UdEwEB/wQFMAMBAf8wHwYDVR0jBBgwFoAU1fZW
-// SIG // y4/oolxiaNE9lJBb186aGMQwVgYDVR0fBE8wTTBLoEmg
-// SIG // R4ZFaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraS9j
-// SIG // cmwvcHJvZHVjdHMvTWljUm9vQ2VyQXV0XzIwMTAtMDYt
-// SIG // MjMuY3JsMFoGCCsGAQUFBwEBBE4wTDBKBggrBgEFBQcw
-// SIG // AoY+aHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraS9j
-// SIG // ZXJ0cy9NaWNSb29DZXJBdXRfMjAxMC0wNi0yMy5jcnQw
-// SIG // DQYJKoZIhvcNAQELBQADggIBAJ1VffwqreEsH2cBMSRb
-// SIG // 4Z5yS/ypb+pcFLY+TkdkeLEGk5c9MTO1OdfCcTY/2mRs
-// SIG // fNB1OW27DzHkwo/7bNGhlBgi7ulmZzpTTd2YurYeeNg2
-// SIG // LpypglYAA7AFvonoaeC6Ce5732pvvinLbtg/SHUB2Rje
-// SIG // bYIM9W0jVOR4U3UkV7ndn/OOPcbzaN9l9qRWqveVtihV
-// SIG // J9AkvUCgvxm2EhIRXT0n4ECWOKz3+SmJw7wXsFSFQrP8
-// SIG // DJ6LGYnn8AtqgcKBGUIZUnWKNsIdw2FzLixre24/LAl4
-// SIG // FOmRsqlb30mjdAy87JGA0j3mSj5mO0+7hvoyGtmW9I/2
-// SIG // kQH2zsZ0/fZMcm8Qq3UwxTSwethQ/gpY3UA8x1RtnWN0
-// SIG // SCyxTkctwRQEcb9k+SS+c23Kjgm9swFXSVRk2XPXfx5b
-// SIG // RAGOWhmRaw2fpCjcZxkoJLo4S5pu+yFUa2pFEUep8beu
-// SIG // yOiJXk+d0tBMdrVXVAmxaQFEfnyhYWxz/gq77EFmPWn9
-// SIG // y8FBSX5+k77L+DvktxW/tM4+pTFRhLy/AsGConsXHRWJ
-// SIG // jXD+57XQKBqJC4822rpM+Zv/Cuk0+CQ1ZyvgDbjmjJnW
-// SIG // 4SLq8CdCPSWU5nR0W2rRnj7tfqAxM328y+l7vzhwRNGQ
-// SIG // 8cirOoo6CGJ/2XBjU02N7oJtpQUQwXEGahC0HVUzWLOh
-// SIG // cGbyoYIC1DCCAj0CAQEwggEAoYHYpIHVMIHSMQswCQYD
-// SIG // VQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4G
-// SIG // A1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0
-// SIG // IENvcnBvcmF0aW9uMS0wKwYDVQQLEyRNaWNyb3NvZnQg
-// SIG // SXJlbGFuZCBPcGVyYXRpb25zIExpbWl0ZWQxJjAkBgNV
-// SIG // BAsTHVRoYWxlcyBUU1MgRVNOOjE3OUUtNEJCMC04MjQ2
-// SIG // MSUwIwYDVQQDExxNaWNyb3NvZnQgVGltZS1TdGFtcCBT
-// SIG // ZXJ2aWNloiMKAQEwBwYFKw4DAhoDFQCA8PNjrxtTBQQd
-// SIG // p/+MHlaqc1fEoaCBgzCBgKR+MHwxCzAJBgNVBAYTAlVT
-// SIG // MRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdS
-// SIG // ZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9y
-// SIG // YXRpb24xJjAkBgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0
-// SIG // YW1wIFBDQSAyMDEwMA0GCSqGSIb3DQEBBQUAAgUA5mmF
-// SIG // zDAiGA8yMDIyMDcwMTIyNDAxMloYDzIwMjIwNzAyMjI0
-// SIG // MDEyWjB0MDoGCisGAQQBhFkKBAExLDAqMAoCBQDmaYXM
-// SIG // AgEAMAcCAQACAjTHMAcCAQACAhFlMAoCBQDmatdMAgEA
-// SIG // MDYGCisGAQQBhFkKBAIxKDAmMAwGCisGAQQBhFkKAwKg
-// SIG // CjAIAgEAAgMHoSChCjAIAgEAAgMBhqAwDQYJKoZIhvcN
-// SIG // AQEFBQADgYEAV0H48Jpy+CgjSGUB7pPnvhrIfYGmsB3r
-// SIG // 8zzPfH1IQIGBjxofhACB0oNjCl3SlciW/+ZgcdclcEcc
-// SIG // eu7Hv1SiHBcDDmCsL235qiWH1s/THzCms+HtXAox7GZo
-// SIG // 446hZSUkwUxgq6tGs6iEHsf3ViEj9Xf67aLphxPrkWCU
-// SIG // 1SMdBowxggQNMIIECQIBATCBkzB8MQswCQYDVQQGEwJV
+// SIG // cnBvcmF0aW9uMSkwJwYDVQQLEyBNaWNyb3NvZnQgT3Bl
+// SIG // cmF0aW9ucyBQdWVydG8gUmljbzEmMCQGA1UECxMdVGhh
+// SIG // bGVzIFRTUyBFU046NDYyRi1FMzE5LTNGMjAxJTAjBgNV
+// SIG // BAMTHE1pY3Jvc29mdCBUaW1lLVN0YW1wIFNlcnZpY2Wg
+// SIG // ghFfMIIHEDCCBPigAwIBAgITMwAAAaQHz+OPo7pv1gAB
+// SIG // AAABpDANBgkqhkiG9w0BAQsFADB8MQswCQYDVQQGEwJV
 // SIG // UzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMH
 // SIG // UmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBv
 // SIG // cmF0aW9uMSYwJAYDVQQDEx1NaWNyb3NvZnQgVGltZS1T
-// SIG // dGFtcCBQQ0EgMjAxMAITMwAAAYo+OI3SDgL66AABAAAB
-// SIG // ijANBglghkgBZQMEAgEFAKCCAUowGgYJKoZIhvcNAQkD
-// SIG // MQ0GCyqGSIb3DQEJEAEEMC8GCSqGSIb3DQEJBDEiBCD7
-// SIG // apDVgofnQbBQ6+ar73eR3Ad/j+h0bT4lNfjXImzKdTCB
-// SIG // +gYLKoZIhvcNAQkQAi8xgeowgecwgeQwgb0EIPS94Kt1
-// SIG // 30q+fvO/fzD4MbWQhQaE7RHkOH6AkjlNVCm9MIGYMIGA
-// SIG // pH4wfDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hp
-// SIG // bmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoT
-// SIG // FU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEmMCQGA1UEAxMd
-// SIG // TWljcm9zb2Z0IFRpbWUtU3RhbXAgUENBIDIwMTACEzMA
-// SIG // AAGKPjiN0g4C+ugAAQAAAYowIgQgti7SzfE9sOI06Cbh
-// SIG // YZ3eo/3n6oLo5xCpNLWNO3O+NRowDQYJKoZIhvcNAQEL
-// SIG // BQAEggIAaEV4vN7pT/rqKxmoOtIf40sU1XdRStMPn2jQ
-// SIG // wx60pKUGwoPAaIFItICQ+3bH0GihnmeMdD0hQ2fhh4cP
-// SIG // jnpgM3mppzXLK8mR4lPZX5sajfppxoCok4dAe6QcSKnm
-// SIG // UV/YhkA5vASHBfuuECQpTyY5dRoUCFc5AS/M5ulXDGb8
-// SIG // QeqUKyVRhxMcZTPB2jQW5rOKLJXgbTINHPuESfKa3nMO
-// SIG // MNzLnaMT4XtxhMyZFW9z9oGKIlAX+L0OuFi/Zx6B3kQG
-// SIG // aB7d5aMiS9KrtsmCB49iwRLVSXh2g8laqRviubaA8pT1
-// SIG // mPb+yyHVn3TCzF6qCmIYDvsGGwZIk7mMB1ju6cYSh1Su
-// SIG // 1r39exGPmkoNBJXsi6MrXBJYYSvADzu60+YPHIYKMPYk
-// SIG // v9SG0vpAuKk7ILfbwpelJzDbwOFrWqoC98GRvbZ9Lq0d
-// SIG // MPs1wyr42G4cYmda32kbtjDEm7xlpx0DL6Xbt8wdlzGF
-// SIG // 83WCMvAxQpGfcKHdWObYVM4WKjThA9uOpF9Z8qlpaT9K
-// SIG // S3dd+VGT149Db24I0D0lku8djLBVJcM12vGZH5jP2sCX
-// SIG // pLKC5+4eNNi6dyqMEyaqHBislPskMihKQHTF6BwEh0e3
-// SIG // 9MZoVnUfTVN+cBoboTCozxyeS9AV+fbruEb+o2xLutf2
-// SIG // tD501e5+jzGCu/xZMJHZvDJXzrCblSw=
+// SIG // dGFtcCBQQ0EgMjAxMDAeFw0yMjAzMDIxODUxMThaFw0y
+// SIG // MzA1MTExODUxMThaMIHOMQswCQYDVQQGEwJVUzETMBEG
+// SIG // A1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9u
+// SIG // ZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9u
+// SIG // MSkwJwYDVQQLEyBNaWNyb3NvZnQgT3BlcmF0aW9ucyBQ
+// SIG // dWVydG8gUmljbzEmMCQGA1UECxMdVGhhbGVzIFRTUyBF
+// SIG // U046NDYyRi1FMzE5LTNGMjAxJTAjBgNVBAMTHE1pY3Jv
+// SIG // c29mdCBUaW1lLVN0YW1wIFNlcnZpY2UwggIiMA0GCSqG
+// SIG // SIb3DQEBAQUAA4ICDwAwggIKAoICAQDAR44A+hT8vNT1
+// SIG // IXDiFRoeGzkmqut+GPk41toTRfQZZ1sSyQhLjIlemBec
+// SIG // emEzO09WSzOjZx9MIT8qYs921WUZsIBsk1ESn1cjyfPU
+// SIG // d1mmfxzL3ACWZwjIC/pjqcRPeIMECQ/6qPFKrjqwigmP
+// SIG // 33I3IcVfMjJHyKj+vR51n1tK2rZPiNhmRdiEhckbbxLs
+// SIG // Sb2nCBQxZEF49x/l8vSB8zaqovoOeIkIzgDerN7OvJou
+// SIG // q6r+vg/Qz1T4NXr+sKKyNxZWM6zywiLp7G7WLd18N2hy
+// SIG // jHwPkh/AleIqif3hGVD9bhSU+dDADzUJSMFhEWunHHEl
+// SIG // QeZjdmIB3/Mw1KkFOJNvw1sPteIi5MK4DZX3Wd/Fd8Zs
+// SIG // QvZmXPWJ8BXN9sYtHMz8zdeQvMImRCKgnXcW8IpnPtC7
+// SIG // Tymp3UV5NoTH8INF6WWicQ3y04L2I1VOT104AddJoVgA
+// SIG // P2KLIGwfCs7wMVz56xJ2IN1y1pIAWfpTqx76orM5RQhk
+// SIG // Avayj1RTwgrHst+elYX3F5b8ACWrgJO1dJy1U4MIv+SC
+// SIG // 8h33xLmWA568emvrJ6g0xy/2akbAeRx6tFwaP4uwVbjF
+// SIG // 50kl5RQqNzp/CDpfCTikOAqyJa4valiWDMbEiArHKLYD
+// SIG // g6GDjuJZl5bSjgdJdCAIRF8EkiiA+UAGvcE6SGoHmtoc
+// SIG // 4yOklGNVvwIDAQABo4IBNjCCATIwHQYDVR0OBBYEFOLQ
+// SIG // E5+s+AgS9sWUHdI4zekp4yTCMB8GA1UdIwQYMBaAFJ+n
+// SIG // FV0AXmJdg/Tl0mWnG1M1GelyMF8GA1UdHwRYMFYwVKBS
+// SIG // oFCGTmh0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS9wa2lv
+// SIG // cHMvY3JsL01pY3Jvc29mdCUyMFRpbWUtU3RhbXAlMjBQ
+// SIG // Q0ElMjAyMDEwKDEpLmNybDBsBggrBgEFBQcBAQRgMF4w
+// SIG // XAYIKwYBBQUHMAKGUGh0dHA6Ly93d3cubWljcm9zb2Z0
+// SIG // LmNvbS9wa2lvcHMvY2VydHMvTWljcm9zb2Z0JTIwVGlt
+// SIG // ZS1TdGFtcCUyMFBDQSUyMDIwMTAoMSkuY3J0MAwGA1Ud
+// SIG // EwEB/wQCMAAwEwYDVR0lBAwwCgYIKwYBBQUHAwgwDQYJ
+// SIG // KoZIhvcNAQELBQADggIBAAlWHFDRDJck7jwwRoYmdVOe
+// SIG // PLLBeidoPUBJVhG9nGeHS9PuRvO9tf4IkbUz74MUIQxe
+// SIG // ayQoxxo/JxUqjhPH52M/b4G9mHJWB75KCllCTg8Y4Vkv
+// SIG // ktOmS0f5w0vOR3gwA9BRnbgAPNEO7xs5Jylto8aDR02+
+// SIG // +CkBDFolCtTNjwzfniEj1z4T7nRlRi2yBAJNRqI+VY82
+// SIG // 0LiyoZtk5OGttq5F5HhPfIMjaIx5QYR22+53sd8xgUwR
+// SIG // pFbcLdrne6jdq3KbiYbCf7y/9F2C7cjpO3kkGXX8ntE0
+// SIG // 9f6o9fIklx7CFw4RzrkyqgYomraKOFJ8JO7hsjNJb9/G
+// SIG // ba/mKWo0j/qdDxDER/UXX6ykZuGx1eQpjkyMwJnOPWGb
+// SIG // eNIYZVcJQpRQODPs593Mi5hBsHzag+vd4Q+Vt73KZ4X9
+// SIG // 8YWW1Vk1aSR9Qjxk5keMuVPZMcMrCvFZXwhUcGFGueuN
+// SIG // CrICL9bSYRfS13pliDxJ7sPSZ8x2d4ksOXW00l6fR5nT
+// SIG // iSM7Dvv7Y0MGVgUhap2smhr92PMNSmIkCUvHCiYcJ4Ro
+// SIG // AT28mp/hOQ/U8mPXSpWdxYpLLcDOISmBhFJYN7amlhIp
+// SIG // VsGvUmjXrTcY0n4Goe/Nqs2400IcA4HOiX9OxdmpNGDJ
+// SIG // zSRR7AW9TT8O+3YZqPZIvL6yzgfvnehptmf4w6QzkrLf
+// SIG // MIIHcTCCBVmgAwIBAgITMwAAABXF52ueAptJmQAAAAAA
+// SIG // FTANBgkqhkiG9w0BAQsFADCBiDELMAkGA1UEBhMCVVMx
+// SIG // EzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1Jl
+// SIG // ZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3Jh
+// SIG // dGlvbjEyMDAGA1UEAxMpTWljcm9zb2Z0IFJvb3QgQ2Vy
+// SIG // dGlmaWNhdGUgQXV0aG9yaXR5IDIwMTAwHhcNMjEwOTMw
+// SIG // MTgyMjI1WhcNMzAwOTMwMTgzMjI1WjB8MQswCQYDVQQG
+// SIG // EwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UE
+// SIG // BxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENv
+// SIG // cnBvcmF0aW9uMSYwJAYDVQQDEx1NaWNyb3NvZnQgVGlt
+// SIG // ZS1TdGFtcCBQQ0EgMjAxMDCCAiIwDQYJKoZIhvcNAQEB
+// SIG // BQADggIPADCCAgoCggIBAOThpkzntHIhC3miy9ckeb0O
+// SIG // 1YLT/e6cBwfSqWxOdcjKNVf2AX9sSuDivbk+F2Az/1xP
+// SIG // x2b3lVNxWuJ+Slr+uDZnhUYjDLWNE893MsAQGOhgfWpS
+// SIG // g0S3po5GawcU88V29YZQ3MFEyHFcUTE3oAo4bo3t1w/Y
+// SIG // JlN8OWECesSq/XJprx2rrPY2vjUmZNqYO7oaezOtgFt+
+// SIG // jBAcnVL+tuhiJdxqD89d9P6OU8/W7IVWTe/dvI2k45GP
+// SIG // sjksUZzpcGkNyjYtcI4xyDUoveO0hyTD4MmPfrVUj9z6
+// SIG // BVWYbWg7mka97aSueik3rMvrg0XnRm7KMtXAhjBcTyzi
+// SIG // YrLNueKNiOSWrAFKu75xqRdbZ2De+JKRHh09/SDPc31B
+// SIG // mkZ1zcRfNN0Sidb9pSB9fvzZnkXftnIv231fgLrbqn42
+// SIG // 7DZM9ituqBJR6L8FA6PRc6ZNN3SUHDSCD/AQ8rdHGO2n
+// SIG // 6Jl8P0zbr17C89XYcz1DTsEzOUyOArxCaC4Q6oRRRuLR
+// SIG // vWoYWmEBc8pnol7XKHYC4jMYctenIPDC+hIK12NvDMk2
+// SIG // ZItboKaDIV1fMHSRlJTYuVD5C4lh8zYGNRiER9vcG9H9
+// SIG // stQcxWv2XFJRXRLbJbqvUAV6bMURHXLvjflSxIUXk8A8
+// SIG // FdsaN8cIFRg/eKtFtvUeh17aj54WcmnGrnu3tz5q4i6t
+// SIG // AgMBAAGjggHdMIIB2TASBgkrBgEEAYI3FQEEBQIDAQAB
+// SIG // MCMGCSsGAQQBgjcVAgQWBBQqp1L+ZMSavoKRPEY1Kc8Q
+// SIG // /y8E7jAdBgNVHQ4EFgQUn6cVXQBeYl2D9OXSZacbUzUZ
+// SIG // 6XIwXAYDVR0gBFUwUzBRBgwrBgEEAYI3TIN9AQEwQTA/
+// SIG // BggrBgEFBQcCARYzaHR0cDovL3d3dy5taWNyb3NvZnQu
+// SIG // Y29tL3BraW9wcy9Eb2NzL1JlcG9zaXRvcnkuaHRtMBMG
+// SIG // A1UdJQQMMAoGCCsGAQUFBwMIMBkGCSsGAQQBgjcUAgQM
+// SIG // HgoAUwB1AGIAQwBBMAsGA1UdDwQEAwIBhjAPBgNVHRMB
+// SIG // Af8EBTADAQH/MB8GA1UdIwQYMBaAFNX2VsuP6KJcYmjR
+// SIG // PZSQW9fOmhjEMFYGA1UdHwRPME0wS6BJoEeGRWh0dHA6
+// SIG // Ly9jcmwubWljcm9zb2Z0LmNvbS9wa2kvY3JsL3Byb2R1
+// SIG // Y3RzL01pY1Jvb0NlckF1dF8yMDEwLTA2LTIzLmNybDBa
+// SIG // BggrBgEFBQcBAQROMEwwSgYIKwYBBQUHMAKGPmh0dHA6
+// SIG // Ly93d3cubWljcm9zb2Z0LmNvbS9wa2kvY2VydHMvTWlj
+// SIG // Um9vQ2VyQXV0XzIwMTAtMDYtMjMuY3J0MA0GCSqGSIb3
+// SIG // DQEBCwUAA4ICAQCdVX38Kq3hLB9nATEkW+Geckv8qW/q
+// SIG // XBS2Pk5HZHixBpOXPTEztTnXwnE2P9pkbHzQdTltuw8x
+// SIG // 5MKP+2zRoZQYIu7pZmc6U03dmLq2HnjYNi6cqYJWAAOw
+// SIG // Bb6J6Gngugnue99qb74py27YP0h1AdkY3m2CDPVtI1Tk
+// SIG // eFN1JFe53Z/zjj3G82jfZfakVqr3lbYoVSfQJL1AoL8Z
+// SIG // thISEV09J+BAljis9/kpicO8F7BUhUKz/AyeixmJ5/AL
+// SIG // aoHCgRlCGVJ1ijbCHcNhcy4sa3tuPywJeBTpkbKpW99J
+// SIG // o3QMvOyRgNI95ko+ZjtPu4b6MhrZlvSP9pEB9s7GdP32
+// SIG // THJvEKt1MMU0sHrYUP4KWN1APMdUbZ1jdEgssU5HLcEU
+// SIG // BHG/ZPkkvnNtyo4JvbMBV0lUZNlz138eW0QBjloZkWsN
+// SIG // n6Qo3GcZKCS6OEuabvshVGtqRRFHqfG3rsjoiV5PndLQ
+// SIG // THa1V1QJsWkBRH58oWFsc/4Ku+xBZj1p/cvBQUl+fpO+
+// SIG // y/g75LcVv7TOPqUxUYS8vwLBgqJ7Fx0ViY1w/ue10Cga
+// SIG // iQuPNtq6TPmb/wrpNPgkNWcr4A245oyZ1uEi6vAnQj0l
+// SIG // lOZ0dFtq0Z4+7X6gMTN9vMvpe784cETRkPHIqzqKOghi
+// SIG // f9lwY1NNje6CbaUFEMFxBmoQtB1VM1izoXBm8qGCAtIw
+// SIG // ggI7AgEBMIH8oYHUpIHRMIHOMQswCQYDVQQGEwJVUzET
+// SIG // MBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVk
+// SIG // bW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0
+// SIG // aW9uMSkwJwYDVQQLEyBNaWNyb3NvZnQgT3BlcmF0aW9u
+// SIG // cyBQdWVydG8gUmljbzEmMCQGA1UECxMdVGhhbGVzIFRT
+// SIG // UyBFU046NDYyRi1FMzE5LTNGMjAxJTAjBgNVBAMTHE1p
+// SIG // Y3Jvc29mdCBUaW1lLVN0YW1wIFNlcnZpY2WiIwoBATAH
+// SIG // BgUrDgMCGgMVADQcKOKTa3xC+g1aPrcPerxiby6foIGD
+// SIG // MIGApH4wfDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldh
+// SIG // c2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNV
+// SIG // BAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEmMCQGA1UE
+// SIG // AxMdTWljcm9zb2Z0IFRpbWUtU3RhbXAgUENBIDIwMTAw
+// SIG // DQYJKoZIhvcNAQEFBQACBQDmp+5aMCIYDzIwMjIwODE4
+// SIG // MDI0NjUwWhgPMjAyMjA4MTkwMjQ2NTBaMHcwPQYKKwYB
+// SIG // BAGEWQoEATEvMC0wCgIFAOan7loCAQAwCgIBAAICDhsC
+// SIG // Af8wBwIBAAICESswCgIFAOapP9oCAQAwNgYKKwYBBAGE
+// SIG // WQoEAjEoMCYwDAYKKwYBBAGEWQoDAqAKMAgCAQACAweh
+// SIG // IKEKMAgCAQACAwGGoDANBgkqhkiG9w0BAQUFAAOBgQC2
+// SIG // M+DrhVwKzRnB7PIU4czyHyd5d4WzPjS53dFVLbU/qHTX
+// SIG // 5al2HcCJMNGiRtCYLrlZKXR6JgD2f4RSvF1zkJnwnLpR
+// SIG // Nkv1nXZfVVw4nAX8YldOajWauT3iJ3A+sh1xcmESrxH0
+// SIG // dXvChDDNu/z6KhTsbundm4Atr2LVjEfzJyYuLTGCBA0w
+// SIG // ggQJAgEBMIGTMHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQI
+// SIG // EwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4w
+// SIG // HAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xJjAk
+// SIG // BgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAy
+// SIG // MDEwAhMzAAABpAfP44+jum/WAAEAAAGkMA0GCWCGSAFl
+// SIG // AwQCAQUAoIIBSjAaBgkqhkiG9w0BCQMxDQYLKoZIhvcN
+// SIG // AQkQAQQwLwYJKoZIhvcNAQkEMSIEILhNmXCq9ehlIPPM
+// SIG // 64n3KSDAgp8NdOTgrguuda8DqKSZMIH6BgsqhkiG9w0B
+// SIG // CRACLzGB6jCB5zCB5DCBvQQgBfzgoyEmcKTASfDCd1sD
+// SIG // Ahd6jmuWBxRuieLh42rqefgwgZgwgYCkfjB8MQswCQYD
+// SIG // VQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4G
+// SIG // A1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0
+// SIG // IENvcnBvcmF0aW9uMSYwJAYDVQQDEx1NaWNyb3NvZnQg
+// SIG // VGltZS1TdGFtcCBQQ0EgMjAxMAITMwAAAaQHz+OPo7pv
+// SIG // 1gABAAABpDAiBCBuErDoj7KvuC4qFmng+dlhJdY9dVum
+// SIG // 1vHKKfXHRhg/MjANBgkqhkiG9w0BAQsFAASCAgCYvkVY
+// SIG // GctAW/ZQqonIqOm0lNalRmz82UpmVyXiPI44vH7qY1hf
+// SIG // 886hd/39B26HzcalS1XdUiULzquYjF5BM6LTg7sOtNNX
+// SIG // 4Yaeqe1mxIjg8BF72OvucKdidmX07aenWGddP7xJzFed
+// SIG // 5eh6A2yoU4ZTiiiIkFxZoS5fCxxE761+y7i5kXVRLMhr
+// SIG // r9qQu3VpGDkN2XECO+oofyhPwfDwF5nGlhxxOD+q3JjQ
+// SIG // jSFK+cq2oXZmrHycBCZRyJGmNkIh/6b7cNp/++GgDm0d
+// SIG // 52Di9NtuA3Hu+ghDVh9MyYtXj0KWNhUjxDVOaKurrG/F
+// SIG // ec5Y2IB85epkDFJKrLg4IWgrbHDNPcfGDxA3Ogok6ftA
+// SIG // 11wRFq1QjEVsp7qxGaGWvR455D0NKRY6BHRqDUhJ6VBg
+// SIG // ir38MYMiGRSeI3JoBHTLzKep6Fj/1gDqkZGS7iBA/jot
+// SIG // EX8neWSuPwV74eIa86I/6s2J7dKL1Mz6HqZL70wN88YS
+// SIG // DlIZoiD7v03AFCkNM6x/ycmtDGvtwOAoeBp26y3AFzR+
+// SIG // 0yzyxJrd52+rDgQh1OAsq1EPvVUxVJ0qmKEwfn+FJX0B
+// SIG // K+z4WGR0CTb/PUro+Tfq/0blbZnlaiRA2r5xz61xNSkf
+// SIG // rAh/rNzg+EJH05GOAGZ7NMiTZDHBu9qH1ImdtBTIbl+F
+// SIG // MQOpSVDtm4SQdp+LqA==
 // SIG // End signature block
