@@ -189,6 +189,13 @@
 	
 	{
 		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.19.30",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.19.30"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "behavior_packs/experimental_spectator",
 		"uuid" : "4bde72a9-966d-426b-8402-2a27965a27cb",
 		"version" : "0.0.1"
