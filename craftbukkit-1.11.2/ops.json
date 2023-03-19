@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "dd38a5f8-3cab-3fd5-906e-e8122f808a46",
+    "name": "Lighting",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "60931bce-fd28-31a2-92d6-25c06678c847",
+    "name": "gh678923",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "fbd33c28-5924-3fdc-aae3-575ddd1bc4f2",
+    "name": "Christmas",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
