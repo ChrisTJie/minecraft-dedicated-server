@@ -1,0 +1,17 @@
+name: BurningMobs
+version: '0.8.0'
+main: meindratheal.burningmobs.BurningMobs
+description: Allows customisation of which mobs burn in sunlight.
+authors: [MCSpazzy, Meindratheal]
+
+commands:
+  burnmobs:
+    description: Allows the command operator to change plugin settings in game.
+    usage: /<command> <info|debug|frequency|zombie|skeleton|spider|creeper|enderman|player>
+    aliases: ['bm']
+    permission: burningmobs.*
+
+permissions:
+  burningmobs.*:
+    description: Allows use of all BurningMobs commands
+    default: op

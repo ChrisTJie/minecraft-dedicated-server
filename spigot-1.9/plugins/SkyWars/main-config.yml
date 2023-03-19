@@ -1,0 +1,57 @@
+# ####### config.yml #######
+# 
+# All comment changes will be removed.
+# 
+# For documentation, please visit 
+# https://dabo.guru/projects/skywars/configuring-skywars
+# #########
+config-version: 2
+debug: false
+skip-uuid-version-check: false
+arena-order: RANDOM
+message-prefix: '&8[&cSkyWars&8]&a '
+save-inventory: true
+save-experience: true
+save-position-gamemode-health: true
+enabled-arenas:
+- skyblock-warriors
+- water-warriors
+locale: en
+skywars-arena-gamerules:
+  doDaylightCycle: 'false'
+skip-respawn-screen: false
+points:
+  enable-points: true
+  win-point-diff: 7
+  death-point-diff: -2
+  kill-point-diff: 1
+  max-save-interval: 300
+  use-sql: false
+  sql:
+    host: 127.0.0.1
+    port: 3306
+    database: minecraft
+    username: root
+    password: aComplexPassword
+    individual-rank-update-interval: 60
+economy:
+  enable-economy: false
+  kill-reward: 10
+  win-reward: 10
+  reward-messages: true
+arena-distance-apart: 200
+command-whitelist:
+  whitelist-enabled: true
+  treated-as-blacklist: false
+  whitelist:
+  - /skywars
+  - /sw
+  - /me
+join-sign-lines:
+- '&8[&cSkyWars&8]'
+- '&8Next Game: &c{name}'
+- '&8Players: &2{count}&3/&2{max}'
+- '&cClick to join!'
+hooks:
+  multiverse-core-hook: true
+  worldedit-hook: true

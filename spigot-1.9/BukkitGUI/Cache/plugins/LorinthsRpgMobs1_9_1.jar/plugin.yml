@@ -1,0 +1,13 @@
+name: LorinthsRpgMobs
+main: me.Lorinth.MobDifficulty.MobDifficulty
+version: 2.3.4
+description: A plugin which provides RPG like creatures that increase in difficulty depending on distance from specific locations.
+softdepend: [Heroes, WorldGuard, LorinthsBossApi]
+commands:
+    lrm:
+        description: displays Lorinths RPG Mobs commands
+        permission: lrm.admin
+permissions:
+    lrm.admin:
+        description: Gives the player all restricted permissions.
+        default: op

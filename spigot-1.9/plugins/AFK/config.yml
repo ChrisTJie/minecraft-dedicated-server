@@ -1,0 +1,23 @@
+# 
+# Thank you for downloading and using AFK V4.9
+# Minecraft 1.9.2 (1.9.4 not tested but shure work)
+# Compiled in MAVEN with the 1.9.2 API
+# ***************************************************
+# Events: def. Move False, Chat true
+# Colors: def. gray [black, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray, dark_gray, blue, green, aqua, red, light_purple, yellow, white]
+# IdleTimer: def. true, 120 sec
+# Messages: def. true (keys: {DISPLAYNAME}, {TIME})
+Events:
+  move: true
+  chat: true
+Colors:
+  message: dark_purple
+  player: dark_green
+IdleTimer:
+  enabled: true
+  period: 60
+Messages:
+  enabled: true
+  nicknames: false
+  +afk: '{DISPLAYNAME} 已離開去尻槍.'
+  -afk: '{DISPLAYNAME} 精盡人亡回來了!'

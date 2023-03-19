@@ -1,0 +1,8 @@
+name: WeiBroadItem
+main: wei.weibroitem.main.Main
+version: 1.0.0
+commands:
+   wbi:
+      description: WeiBroadItem Command.
+      permission: weibroaditem.all
+      permission-message: 你沒有足夠的權限

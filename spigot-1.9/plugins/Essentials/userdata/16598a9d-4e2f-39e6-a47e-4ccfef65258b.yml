@@ -1,0 +1,20 @@
+geolocation: N/A
+lastAccountName: ChrisTJie
+timestamps:
+  login: 1657358739066
+  logout: 1657359142404
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 200.5
+  y: 69.0
+  z: 125.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: world
+  x: 196.0
+  y: 68.0
+  z: 125.0
+  yaw: 0.0
+  pitch: 0.0

@@ -1,0 +1,10 @@
+updatefrequency: 1000
+debugmode: false
+burnzombie: true
+burnskeleton: true
+burncreeper: true
+burnspider: true
+burnenderman: true
+burnplayer: false
+burnstarttime: 23750
+burnendtime: 12750

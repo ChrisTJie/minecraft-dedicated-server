@@ -1,0 +1,106 @@
+name: LogEx
+main: lu.kremi151.logex.LogEx
+version: 1.6.6-CU
+author: kremi151, pokepal101 (for Log)
+softdepend: [Vault, WorldEdit, JSONAPI]
+description: Tool for logging (almost) everything.
+permissions:
+    log.*:
+        description: Gives access to all moderator level Log tools
+    log.stick:
+        description: Allows you to look up a solid block
+        default: op
+    log.bone:
+        description: Allows you to look up an air block
+        default: op
+    log.feather:
+        description: Allows you to show informations about a block type
+        default: op
+    log.admin.clean:
+        description: Allows you to delete Log entries older than a certain amount of time
+        default: op
+    log.admin.reloadconfig:
+        description: Allows you to reload the configuration file
+        default: op
+    log.admin.permissionmanager:
+        description: Allows you to modify permission managers
+        default: op
+    log.admin.settings:
+        description: Allows you to modify settings via command
+        default: op
+    log.admin.tooltoogle:
+        description: Allows you to toggle on or off the tools
+        default: op
+    log.admin.setlanguage:
+        description: Allows you to set the language
+        default: op
+    log.admin.selfcheck:
+        description: Allows you to set the language
+        default: op
+    log.admin.reloaddb:
+        description: Allows you to reload the databases
+        default: op
+    log.admin.rollback:
+        description: Allows you to do a rollback out of the database
+        default: op
+    log.admin.playerinfo:
+        description: Allows you to show informations of a player
+        default: op
+    log.admin.notifications.update:
+        description: Allows you to get notifications when a newer version is out
+        default: op
+    log.watch.logins:
+        description: Allows you to watch the collected logins
+        default: op
+    log.watch.chat:
+        description: Allows you to watch the chat log
+        default: op
+    log.watch.spawneggs:
+        description: Allows you to watch the spawnegg log
+        default: op
+    log.watch.mobkills:
+        description: Allows you to watch the mob kill log
+        default: op
+    log.watch.commands:
+        description: Allows you to watch the spawnegg log
+        default: op
+    log.watch.ore:
+        description: Allows you to watch the ore data of the players
+        default: op
+    log.watch.death:
+        description: Allows you to watch the deaths of the players
+        default: op
+    log.watch.gamemode:
+        description: Allows you to watch the gamemode switches of the players
+        default: op
+    log.watch.world:
+        description: Allows you to watch the world switches of the players
+        default: op
+    log.watch.statistics:
+        description: Allows you to watch some statistics
+        default: op
+    log.watch.changelog:
+        description: Allows you to watch the changelog
+        default: op
+    log.watch.enderchest:
+        description: Allows you to watch a players enderchest content
+        default: op
+    log.watch.inventory:
+        description: Allows you to watch a players inventory
+        default: op
+    log.watch.position:
+        description: Allows you to watch a players (last known) position
+        default: op
+    log.watch.worldinfo:
+        description: Allows you to watch some infos about the current world
+        default: op
+commands:
+    logex:
+        description: Accesses log commands
+        usage: /<command>
+    log:
+        description: Accesses log commands
+        usage: /<command>
+    l:
+        description: Accesses log commands
+        usage: /<command>

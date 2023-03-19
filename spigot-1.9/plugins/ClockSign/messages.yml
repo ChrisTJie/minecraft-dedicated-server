@@ -1,0 +1,15 @@
+prefix: '&9[ClockSign] '
+consolePrefix: '[ClockSign] '
+removeToConsole: Removing %CLOCKTYPE% with label '%CLOCKLABEL%' in world '%WORLD%'.
+removeToOperators: '&dRemoving %CLOCKTYPE% with label ''%CLOCKLABEL%'' in world ''%WORLD%''.'
+removeInvalidToConsole: Removed invalid clock with label '%CLOCKLABEL%' in world '%WORLD%'.
+removeInvalidToOperators: '&dRemoved invalid clock with label ''%CLOCKLABEL%'' in
+  world ''%WORLD%''.'
+denyToConsole: 'Denied %CLOCKTYPE% creation for %PLAYER% in world ''%WORLD'' for reason:
+  No permission.'
+denyToOperators: '&dDenied %CLOCKTYPE% creation for %PLAYER% in world ''%WORLD'' for
+  reason: No permission.'
+denyToPlayer: '&cYou are not allowed to create a %CLOCKTYPE%!'
+createToConsole: Player %PLAYER%&r created a %CLOCKTYPE% in world %WORLD%.
+createToOperators: '&fPlayer &6%PLAYER%&r created a &b%CLOCKTYPE%&f in world &%WORLD%.'
+createToPlayer: '&fCreated a new %CLOCKTYPE%!'

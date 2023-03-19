@@ -1,0 +1,163 @@
+icons:
+    mobs.zombiepigman:
+        label: Zombie Pigman
+    mobs.cat:
+        label: Cat
+    mobs.boar:
+        label: Boar
+    mobs.kitty:
+        label: Kitty
+    mobs.ocelot:
+        label: Ocelot
+    mobs.enderdragon:
+        label: Ender Dragon
+    mobs.wolf:
+        label: Wolf
+    mobs.rabbit:
+        label: Rabbit
+    mobs.duck:
+        label: Duck
+    mobs.fox:
+        label: Bird
+    mobs.bigcat:
+        label: Big Cat
+    mobs.bear:
+        label: Bear
+    mobs.werewolf:
+        label: Werewolf
+    mobs.slime:
+        label: Slime
+    mobs.snake:
+        label: Snake
+    mobs.creeper:
+        label: Creeper
+    mobs.golem:
+        label: Iron Golem
+    mobs.turtle:
+        label: Turtle
+    mobs.blaze:
+        label: Blaze
+    vehicles.powered-minecart:
+        label: Powered Minecart
+    vehicles.explosive-minecart:
+        label: Explosive Minecart
+    mobs.caveogre:
+        label: Cave Ogre
+    mobs.vanillahorse:
+        label: Horse
+    mobs.wraith:
+        label: Wraith
+    mobs.ghast:
+        label: Ghast
+    mobs.villager:
+        label: Villager
+    mobs.endermite:
+        label: Endermite
+    mobs.chicken:
+        label: Chicken
+    mobs.wither:
+        label: Wither
+    vehicles.hopper-minecart:
+        label: Hopper Minecart
+    mobs.crocodile:
+        label: Crocodile
+    mobs.sheep:
+        label: Sheep
+    mobs.ostrich:
+        label: Ostrich
+    mobs.mooshroom:
+        label: Mooshroom
+    mobs.fishy:
+        label: Fishy
+    mobs.shark:
+        label: Shark
+    mobs.cavespider:
+        label: Cave Spider
+    mobs.snowgolem:
+        label: Snow Golem
+    mobs.witch:
+        label: Witch
+    mobs.bat:
+        label: Bat
+    mobs.fireogre:
+        label: Fire Ogre
+    vehicles.boat:
+        label: Boat
+    mobs.ogre:
+        label: Ogre
+    mobs.spider:
+        label: Spider
+    mobs.cow:
+        label: Cow
+    mobs.tamedwolf:
+        label: Wolf
+    mobs.pig:
+        label: Pig
+    mobs.witherskeleton:
+        label: Wither Skeleton
+    mobs.deer:
+        label: Deer
+    mobs.guardian:
+        label: Guardian
+    mobs.jellyfish:
+        label: Jelly Fish
+    mobs.spiderjockey:
+        label: Spider Jockey
+    mobs.scorpion:
+        label: Scorpion
+    mobs.horse:
+        label: Horse
+    mobs.flamewraith:
+        label: Wraith
+    mobs.bunny:
+        label: Bunny
+    mobs.silverfish:
+        label: Silverfish
+    mobs.giant:
+        label: Giant
+    vehicles.spawner-minecart:
+        label: Spawner Minecart
+    mobs.goat:
+        label: Goat
+    mobs.hellrat:
+        label: Hell Rat
+    mobs.polarbear:
+        label: Polar Bear
+    mobs.magmacube:
+        label: Magma Cube
+    mobs.skeleton:
+        label: Skeleton
+    vehicles.minecart:
+        label: Minecart
+    vehicles.storage-minecart:
+        label: Storage Minecart
+    mobs.squid:
+        label: Squid
+    mobs.zombie:
+        label: Zombie
+    mobs.wildwolf:
+        label: Wild Wolf
+    mobs.rat:
+        label: Rat
+    mobs.ray:
+        label: Ray
+    mobs.enderman:
+        label: Enderman
+    mobs.dolphin:
+        label: Shark
+sets:
+    markers:
+        hide: false
+        circles: {
+            }
+        deficon: default
+        areas: {
+            }
+        label: Markers
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 0
+playersets: {
+    }

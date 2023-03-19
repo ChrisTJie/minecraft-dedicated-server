@@ -1,0 +1,35 @@
+items:
+  stick: '280'
+  bone: '352'
+  feather: '288'
+  arrow: '262'
+filters:
+  commandLogging:
+    commands: []
+general:
+  language: en
+  useAlwaysBuildInLanguage: false
+  autoUpdateCheck: true
+  enableStatistics: true
+  enableMultithreading: true
+features:
+  worldSwitchLogging: true
+  ipLogging: true
+  worldEditLogging: true
+  deathLogging: true
+  mobKillLogging: true
+  bucketLogging: true
+  blockLogging: true
+  chatLogging: true
+  spawnEggLogging: true
+  commandLogging: true
+  pickupItemLogging: true
+  gameModeLogging: true
+permissions:
+  handlerToUse: '0'
+autocleaner:
+  enabled: false
+  hoursToKeep: '168'
+  interval: '1'
+do_not_touch:
+  last_vcode: '21'

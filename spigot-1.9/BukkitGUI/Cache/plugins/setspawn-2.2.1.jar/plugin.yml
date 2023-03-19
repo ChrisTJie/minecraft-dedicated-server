@@ -1,0 +1,27 @@
+author: artur9010
+name: SetSpawn
+main: pl.artur9010.setspawn.SetSpawnPlugin
+version: 2.2.1
+commands:
+  spawn:
+    description: Teleport to spawn
+  setspawn:
+    description: Set spawn
+  rspawn:
+      description: Reload SetSpawn
+permissions:
+  setspawn.*:
+    description: Access all setspawn commands
+    children:
+      setspawn.setspawn: true
+      setspawn.spawn: true
+      setspawn.rspawn: true
+  setspawn.setspawn:
+    description: Setspawn
+    default: op
+  setspawn.spawn:
+    description: Teleport to spawn
+    default: true
+  setspawn.rspawn:
+    description: Reload setspawn
+    default: op

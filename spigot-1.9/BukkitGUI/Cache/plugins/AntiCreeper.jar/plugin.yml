@@ -1,0 +1,69 @@
+# 11 Nov 2012 : PSW : Added commands
+# 24 Nov 2012 : PSW : Added reload
+# 06 Dec 2012 : PSW : Added dragon options, replaced damage* with explodeblocks
+# 16 Dec 2012 : PSW : added a few more aliases
+# 23 Dec 2012 : PSW : Added allowbeds
+# 06 Jan 2013 : PSW : Added power
+# 21 Mar 2013 : PSW : Added blockphysics help, 4.8
+# 12 Apr 2013 : PSW : Added explodeabove, 4.9
+# 11 Jul 2013 : PSW : Added minecart, skull options, 4.11, and unknown from 4.10.
+# 8  Aug 2013 : PSW : Added crystal.
+# 8  Feb 2014 : PSW : Added charge.
+# 17 Feb 2014 : PSW : Added LanguagesAPI softdepend
+# 17 Mar 2014 : PSW : Added world all|world option; removed old '3' suffix
+# 03 Oct 2014 : PSW : Added stat, version commands
+# 17 Nov 2014 : PSW : Added vanilla defaults for nerf_dragon
+
+name: AntiCreeper
+main: net.anticreeper.Anticreeper
+version: 4.19
+authors: [filber66, Rothens]
+softdepend: [LanguagesAPI]
+description: AntiCreeper by filbert66. Various abilities to nerf explosions and their affects and endermen. Command-line interface!
+website: dev.bukkit.org/bukkit-plugins/anticreeper
+
+commands:
+
+  ac:
+    alias: anticreeper
+    description: Admin AntiCreeper command prefix; also supports acs, acb, acbl, ace, acp params
+    usage: <command> print [<>]|save|reload|version|world [on|off] [all|<world>]  Many more options; see http://bit.ly/1aeTBoH
+    permission: anticreeper.admin
+  acs: 
+    alias: [acset, ac_set]
+    description: AntiCreeper set discrete config item
+    usage: <command> creeper|wither|tnt|fireball|lightning|dragon|minecart|skull|crystal|unknown (whitelist|blacklist)|(yield|depth|power|explodeabove [#])
+    permission: anticreeper.admin
+  acb:
+    alias: [acboolean, ac_boolean]
+    description: AntiCreeper set discrete booleans
+    usage: <command> creeper|wither|tnt|fireball|lightning|dragon|minecart|skull|crystal|charge|unknown (explodeblocks|destroyblocks|effects|fire|blockphysics true|false)|(damage (player|mob|item|drops|painting true|false))
+    permission: anticreeper.admin
+  acbl:
+    alias: [acblocks, ac_blocks]
+    description: AntiCreeper set blocklists
+    usage: <command> fragile|durable [creeper|wither|tnt|fireball|dragon|minecart|skull|crystal|unknown] [#[:#][,#]*]
+  ace:
+    alias: [acender, ac_ender]
+    description: AntiCreeper admin command to modify nerf_endermen
+    usage: <command> ((teleport[ok]|blocklift[ok]|blockplace[ok]) [true|false])|(take|leave [#[:#][,#]*)
+  acp:
+    alias: [acprint, ac_print]
+    description:  AntiCreeper config print command
+    usage: <command> [all|creeper|fireball|TNT|wither|lightning|endermen|dragon|worlds|minecart|crystal|skull|charge|unknown|stat]
+    permission: anticreeper.print
+
+permissions:
+  anticreeper.*:
+    description: Gives access to ALL anticreeper features
+    children:
+      anticreeper.admin: true
+      anticreeper.print: true
+  anticreeper.admin:
+    description: Allows user to query & set configs
+    default: op
+  anticreeper.print:
+    description: Allows user to query configs
+    default: true
+    
+    

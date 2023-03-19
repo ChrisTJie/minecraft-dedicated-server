@@ -1,0 +1,12 @@
+name: SkyWars
+main: net.daboross.bukkitdev.skywars.SkyWarsPlugin
+version: 2.1.4
+author: Dabo Ross
+description: Bukkit plugin to facilitate arena minigames
+url: https://dabo.guru/projects/skywars
+softdepend: [Vault, WorldEdit]
+commands:
+  skywars:
+    aliases: [sw]
+  skywarssetup:
+    aliases: [sws]

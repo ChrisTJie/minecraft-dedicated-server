@@ -1,0 +1,6 @@
+name: WorldEdit
+main: com.sk89q.worldedit.bukkit.WorldEditPlugin
+version: "6.1.2;b3fbe8b"
+
+# Permissions aren't here. Read http://wiki.sk89q.com/wiki/WEPIF/DinnerPerms
+# for how WorldEdit permissions actually work.

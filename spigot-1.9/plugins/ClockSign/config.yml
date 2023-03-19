@@ -1,0 +1,7 @@
+# 'defaultTimeFormat' is for the format the time should be shown on clocks. 'notifyDeny' is for logging when someone has no permission to place clocks. 'notifyRemove' is for logging removing clocks.
+defaultTimeFormat: HH:mm
+notifyDenyToConsole: true
+notifyDenyToOperators: true
+notifyRemoveToConsole: true
+notifyRemoveToOperators: true
+enableSoundEffects: true

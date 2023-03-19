@@ -1,1 +1,1 @@
-# Minecraft Dedicated Server
+# Minecraft Java Dedicated Server

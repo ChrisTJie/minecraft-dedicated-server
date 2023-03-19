@@ -1,0 +1,17 @@
+name: ArmorHUD
+main: nl.kippers.armorhud.Main
+version: '1.12'
+softdepend: [Vault]
+
+commands:
+  armorhud:
+    usage: /armorhud <on|off|alert|auto>
+    description: /armorhud <on|off|alert|auto>
+
+permissions:
+  armorhud.use:
+    description: Gives the player permission to use ArmorHUD
+    default: false
+  armorhud.reload:
+    description: Gives the player permission to use the /armorhud reload command
+    default: false

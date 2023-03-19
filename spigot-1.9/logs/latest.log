@@ -1,0 +1,406 @@
+[17:20:14] [Server thread/INFO]: Starting minecraft server version 1.9
+[17:20:14] [Server thread/INFO]: Loading properties
+[17:20:14] [Server thread/INFO]: Default game type: SURVIVAL
+[17:20:15] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-d20369f-7fc5cd8 (MC: 1.9) (Implementing API version 1.9-R0.1-SNAPSHOT)
+[17:20:15] [Server thread/INFO]: Debug logging is disabled
+[17:20:15] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:20:15] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:20:15] [Server thread/INFO]: Generating keypair
+[17:20:15] [Server thread/INFO]: Starting Minecraft server on *:27018
+[17:20:15] [Server thread/INFO]: Using default channel type
+[17:20:18] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[17:20:19] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.2;b3fbe8b
+[17:20:19] [Server thread/INFO]: [AFK] Loading AFK v4.5.0
+[17:20:19] [Server thread/INFO]: [HealthBar] Loading HealthBar v1.8.3
+[17:20:19] [Server thread/INFO]: [AntiCreeper] Loading AntiCreeper v4.19
+[17:20:19] [Server thread/INFO]: [Essentials] Loading Essentials vTeamCity
+[17:20:19] [Server thread/INFO]: [GroupManager] Loading GroupManager v2.0 (Phoenix)
+[17:20:19] [Server thread/INFO]: [ClearLag] Loading ClearLag v2.9.1
+[17:20:19] [Server thread/INFO]: [BurningMobs] Loading BurningMobs v0.8.0
+[17:20:19] [Server thread/INFO]: [NewTag] Loading NewTag v1.4
+[17:20:19] [Server thread/INFO]: [Lockette] Loading Lockette v1.8.23
+[17:20:19] [Server thread/INFO]: [GravelClay] Loading GravelClay v1.3.5
+[17:20:19] [Server thread/INFO]: [More-Mobs] Loading More-Mobs v3.0.2
+[17:20:19] [Server thread/INFO]: [AutoSaveWorld] Loading AutoSaveWorld v4.14.2
+[17:20:19] [Server thread/INFO]: [GUIShop] Loading GUIShop v4.2.4
+[17:20:19] [Server thread/INFO]: [RPGHealthPlus] Loading RPGHealthPlus v1.2.9
+[17:20:19] [Server thread/INFO]: [EssentialsProtect] Loading EssentialsProtect vTeamCity
+[17:20:19] [Server thread/INFO]: [VK] Loading VoteKick v2.0
+[17:20:19] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat vTeamCity
+[17:20:19] [Server thread/INFO]: [EssentialsGeoIP] Loading EssentialsGeoIP vTeamCity
+[17:20:19] [Server thread/INFO]: [EssentialsAntiBuild] Loading EssentialsAntiBuild vTeamCity
+[17:20:19] [Server thread/INFO]: [TimeIsMoney] Loading TimeIsMoney v1928
+[17:20:19] [Server thread/INFO]: [MOTDColor] Loading MOTDColor v0.5
+[17:20:19] [Server thread/INFO]: [Vault] Loading Vault v1.5.6-b49
+[17:20:19] [Server thread/INFO]: [ClockSign] Loading ClockSign v1.7
+[17:20:19] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn vTeamCity
+[17:20:19] [Server thread/INFO]: [dynmap] Loading dynmap v2.3-SNAPSHOT-1139
+[17:20:19] [Server thread/INFO]: [dynmap] version=git-Spigot-d20369f-7fc5cd8 (MC: 1.9)
+[17:20:19] [Server thread/INFO]: [dynmap] Mod Support API available
+[17:20:19] [Server thread/INFO]: [LogEx] Loading LogEx v1.6.6-CU
+[17:20:19] [Server thread/INFO]: [ArmorHUD] Loading ArmorHUD v1.12
+[17:20:19] [Server thread/INFO]: [dynmap-mobs] Loading dynmap-mobs v1.3
+[17:20:19] [Server thread/INFO]: [SkyWars] Loading SkyWars v2.1.4
+[17:20:19] [Server thread/INFO]: [AutoSaveWorld] Enabling AutoSaveWorld v4.14.2
+[17:20:19] [Server thread/INFO]: [Vault] Enabling Vault v1.5.6-b49
+[17:20:19] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[17:20:19] [Server thread/INFO]: [Vault] [Permission] GroupManager found: Waiting
+[17:20:19] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[17:20:19] [Server thread/INFO]: [Vault] [Chat] GroupManager found: Waiting
+[17:20:19] [Server thread/INFO]: [Vault] Enabled Version 1.5.6-b49
+[17:20:19] [Server thread/INFO]: [ClockSign] Enabling ClockSign v1.7
+[17:20:19] [Server thread/INFO]: [ClockSign] Successfully loaded clocks.csv!
+[17:20:19] [Server thread/INFO]: [ClockSign] ClockSign v1.7 enabled successfully!
+[17:20:19] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:20:19] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:20:19] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:20:19] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:20:19] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[17:20:19] [Server thread/INFO]: Preparing level "world"
+[17:20:20] [Server thread/INFO]: -------- World Settings For [world] --------
+[17:20:20] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:20:20] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:20:20] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:20:20] [Server thread/INFO]: View Distance: 10
+[17:20:20] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:20:20] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:20:20] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:20:20] [Server thread/INFO]: Max Entity Collisions: 8
+[17:20:20] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[17:20:20] [Server thread/INFO]: Mob Spawn Range: 4
+[17:20:20] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:20:20] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[17:20:20] [Server thread/INFO]: Max TNT Explosions: 100
+[17:20:20] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:20:20] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:20:20] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[17:20:20] [Server thread/INFO]: Random Lighting Updates: false
+[17:20:20] [Server thread/INFO]: Structure Info Saving: true
+[17:20:20] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[17:20:20] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:20:20] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:20:20] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:20:20] [Server thread/INFO]: View Distance: 10
+[17:20:20] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:20:20] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:20:20] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:20:20] [Server thread/INFO]: Max Entity Collisions: 8
+[17:20:20] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[17:20:20] [Server thread/INFO]: Mob Spawn Range: 4
+[17:20:20] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:20:20] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[17:20:20] [Server thread/INFO]: Max TNT Explosions: 100
+[17:20:20] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:20:20] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:20:20] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[17:20:20] [Server thread/INFO]: Random Lighting Updates: false
+[17:20:20] [Server thread/INFO]: Structure Info Saving: true
+[17:20:20] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[17:20:20] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:20:20] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:20:20] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:20:20] [Server thread/INFO]: View Distance: 10
+[17:20:20] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:20:20] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:20:20] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:20:20] [Server thread/INFO]: Max Entity Collisions: 8
+[17:20:20] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[17:20:20] [Server thread/INFO]: Mob Spawn Range: 4
+[17:20:20] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:20:20] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:20:20] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[17:20:20] [Server thread/INFO]: Max TNT Explosions: 100
+[17:20:20] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:20:20] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:20:20] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[17:20:20] [Server thread/INFO]: Random Lighting Updates: false
+[17:20:20] [Server thread/INFO]: Structure Info Saving: true
+[17:20:20] [Server thread/INFO]: Preparing start region for level 0 (Seed: 7450177290179503925)
+[17:20:21] [Server thread/INFO]: Preparing spawn area: 8%
+[17:20:22] [Server thread/INFO]: Preparing spawn area: 90%
+[17:20:22] [Server thread/INFO]: Preparing start region for level 1 (Seed: 7450177290179503925)
+[17:20:23] [Server thread/INFO]: Preparing start region for level 2 (Seed: 7450177290179503925)
+[17:20:23] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.2;b3fbe8b
+[17:20:24] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[17:20:24] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_9_R1 as the Bukkit adapter
+[17:20:24] [Server thread/INFO]: [AFK] Enabling AFK v4.5.0
+[17:20:24] [Server thread/INFO]: [HealthBar] Enabling HealthBar v1.8.3
+[17:20:25] [Server thread/INFO]: [AntiCreeper] Enabling AntiCreeper v4.19
+[17:20:25] [Server thread/INFO]: [AntiCreeper] brought to you by Filbert66
+[17:20:25] [Server thread/INFO]: [Essentials] Enabling Essentials vTeamCity
+[17:20:25] [Server thread/INFO]: Bukkit version format changed. Version not checked.
+[17:20:25] [Server thread/INFO]: git-Spigot-d20369f-7fc5cd8 (MC: 1.9)
+[17:20:25] [Server thread/INFO]: 1.9-R0.1-SNAPSHOT
+[17:20:25] [Server thread/INFO]: Using locale en_US
+[17:20:25] [Server thread/INFO]: Using locale en_US
+[17:20:25] [Server thread/INFO]: [Vault][Economy] Essentials Economy hooked.
+[17:20:25] [Server thread/INFO]: Essentials: Using config file enhanced permissions.
+[17:20:25] [Server thread/INFO]: Permissions listed in as player-commands will be given to all users.
+[17:20:25] [Server thread/INFO]: [GroupManager] Enabling GroupManager v2.0 (Phoenix)
+[17:20:25] [Server thread/INFO]: GroupManager - INFO - World Found: world
+[17:20:25] [Server thread/INFO]: GroupManager - INFO - Superperms support enabled.
+[17:20:25] [Server thread/INFO]: GroupManager - INFO - Scheduled Data Saving is set for every 10 minutes!
+[17:20:25] [Server thread/INFO]: GroupManager - INFO - Backups will be retained for 24 hours!
+[17:20:25] [Server thread/INFO]: GroupManager version 2.0 (Phoenix) is enabled!
+[17:20:25] [Server thread/INFO]: WEPIF: GroupManager detected! Using GroupManager for permissions.
+[17:20:25] [Server thread/INFO]: [Vault][Permission] GroupManager hooked.
+[17:20:25] [Server thread/INFO]: [Vault][Chat] GroupManager - Chat hooked.
+[17:20:25] [Server thread/INFO]: Essentials: Using GroupManager based permissions.
+[17:20:25] [Server thread/INFO]: [ClearLag] Enabling ClearLag v2.9.1
+[17:20:25] [Server thread/INFO]: [ClearLag] Loading modules...
+[17:20:25] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[17:20:25] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[17:20:25] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[17:20:25] [Thread-18/INFO]: [ClearLag] Checking for updates...
+[17:20:25] [Server thread/INFO]: [BurningMobs] Enabling BurningMobs v0.8.0
+[17:20:25] [Server thread/INFO]: [BurningMobs] v0.8.0 started successfully!
+[17:20:25] [Server thread/INFO]: [NewTag] Enabling NewTag v1.4
+[17:20:25] [Server thread/INFO]: [NewTag] Configurations loaded successfully!
+[17:20:25] [Server thread/INFO]: [Lockette] Enabling Lockette v1.8.23
+[17:20:25] [Server thread/INFO]: [Lockette] Version 1.8.23 is being enabled!  Yay!  (Core version 1.3.5)
+[17:20:25] [Server thread/INFO]: minor >
+[17:20:25] [Server thread/INFO]: [Lockette] Detected Bukkit version [v1_9_R1] ok.
+[17:20:25] [Server thread/INFO]: [Lockette] Custom lockable block list: [116, 84, 57, 145, 154]
+[17:20:25] [Server thread/INFO]: [Lockette] Ignoring linked plugins: [mcMMO]
+[17:20:25] [Server thread/INFO]: [Lockette] Loading strings file for English by Acru
+[17:20:25] [Server thread/INFO]: [Lockette] Enabled link to plugin GroupManager for Groups, version 2.0 (Phoenix)
+[17:20:25] [Server thread/INFO]: [Lockette] Using ops file for admin permissions.
+[17:20:25] [Server thread/INFO]: [Lockette] Ready to protect your containers.
+[17:20:25] [Server thread/INFO]: [GravelClay] Enabling GravelClay v1.3.5
+[17:20:25] [Server thread/INFO]: [GravelClay] version 1.3.5 by [Darklust] is enabled.
+[17:20:25] [Server thread/INFO]: [More-Mobs] Enabling More-Mobs v3.0.2
+[17:20:25] [Server thread/INFO]: [GUIShop] Enabling GUIShop v4.2.4
+[17:20:25] [Server thread/INFO]: [RPGHealthPlus] Enabling RPGHealthPlus v1.2.9
+[17:20:25] [Server thread/INFO]: [RPGHealthPlus] Please download it for v1_9_R1
+[17:20:25] [Server thread/INFO]: [RPGHealthPlus] has been disabled!
+[17:20:25] [Server thread/INFO]: [EssentialsProtect] Enabling EssentialsProtect vTeamCity
+[17:20:25] [Server thread/INFO]: [VK] Enabling VoteKick v2.0
+[17:20:25] [Server thread/INFO]: [VoteKick version 2.0 by [Shayana] enabled !
+[17:20:25] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat vTeamCity
+[17:20:25] [Server thread/INFO]: [EssentialsGeoIP] Enabling EssentialsGeoIP vTeamCity
+[17:20:25] [Server thread/INFO]: [EssentialsGeoIP] This product includes GeoLite data created by MaxMind, available from http://www.maxmind.com/.
+[17:20:25] [Server thread/INFO]: [EssentialsAntiBuild] Enabling EssentialsAntiBuild vTeamCity
+[17:20:25] [Server thread/INFO]: [TimeIsMoney] Enabling TimeIsMoney v1928
+[17:20:25] [Server thread/INFO]: [TimeIsMoney] Loaded 2 Payouts!
+[17:20:26] [Server thread/WARN]: [AutoSaveWorld] Plugin TimeIsMoney attempted to establish connection https://www.spigotmc.org/resources/time-is-money.12409/ in main server thread
+[17:20:27] [Server thread/WARN]: [AutoSaveWorld] Plugin TimeIsMoney attempted to establish connection socket://www.spigotmc.org:443 in main server thread
+[17:20:27] [Thread-18/INFO]: [ClearLag] Clearlag version v2.9.3 update available! Downloading...
+[17:20:27] [Server thread/WARN]: java.io.IOException: Server returned HTTP response code: 503 for URL: https://www.spigotmc.org/resources/time-is-money.12409/
+[17:20:27] [Server thread/WARN]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+[17:20:27] [Server thread/WARN]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+[17:20:27] [Server thread/WARN]: 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+[17:20:27] [Server thread/WARN]: 	at webapi.VersionChecker.get_content(VersionChecker.java:67)
+[17:20:27] [Server thread/WARN]: 	at webapi.VersionChecker.init(VersionChecker.java:40)
+[17:20:27] [Server thread/WARN]: 	at de.Linus122.TimeIsMoney.Main.onEnable(Main.java:131)
+[17:20:27] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:292)
+[17:20:27] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:340)
+[17:20:27] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405)
+[17:20:27] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_9_R1.CraftServer.loadPlugin(CraftServer.java:361)
+[17:20:27] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_9_R1.CraftServer.enablePlugins(CraftServer.java:321)
+[17:20:27] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.MinecraftServer.t(MinecraftServer.java:411)
+[17:20:27] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.MinecraftServer.l(MinecraftServer.java:376)
+[17:20:27] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.MinecraftServer.a(MinecraftServer.java:331)
+[17:20:27] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.DedicatedServer.init(DedicatedServer.java:269)
+[17:20:27] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.MinecraftServer.run(MinecraftServer.java:527)
+[17:20:27] [Server thread/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[17:20:27] [Server thread/ERROR]: [TimeIsMoney] Essentials found. Hook in it -> Will use Essentials's AFK feature if afk is enabled.
+[17:20:27] [Server thread/INFO]: Time is Money v1928 started.
+[17:20:27] [Server thread/INFO]: [MOTDColor] Enabling MOTDColor v0.5
+[17:20:27] [Server thread/INFO]: [MOTDColor] MOTDColor event priority: NORMAL
+[17:20:27] [Server thread/INFO]: [MOTDColor] MOTDColor: icon url loaded.
+[17:20:27] [Server thread/WARN]: [AutoSaveWorld] Plugin MOTDColor attempted to establish connection https://facepunch.com/image.php?u=673224ateline=1417533773 in main server thread
+[17:20:27] [Server thread/WARN]: [AutoSaveWorld] Plugin MOTDColor attempted to establish connection socket://facepunch.com:443 in main server thread
+[17:20:28] [Server thread/WARN]: javax.imageio.IIOException: Can't get input stream from URL!
+[17:20:28] [Server thread/WARN]: 	at javax.imageio.ImageIO.read(Unknown Source)
+[17:20:28] [Server thread/WARN]: 	at MOTDColor.MOTDColor.loadIcon(MOTDColor.java:208)
+[17:20:28] [Server thread/WARN]: 	at MOTDColor.MOTDColor.registerListener(MOTDColor.java:193)
+[17:20:28] [Server thread/WARN]: 	at MOTDColor.MOTDColor.onEnable(MOTDColor.java:32)
+[17:20:28] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:292)
+[17:20:28] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:340)
+[17:20:28] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405)
+[17:20:28] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_9_R1.CraftServer.loadPlugin(CraftServer.java:361)
+[17:20:28] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_9_R1.CraftServer.enablePlugins(CraftServer.java:321)
+[17:20:28] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.MinecraftServer.t(MinecraftServer.java:411)
+[17:20:28] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.MinecraftServer.l(MinecraftServer.java:376)
+[17:20:28] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.MinecraftServer.a(MinecraftServer.java:331)
+[17:20:28] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.DedicatedServer.init(DedicatedServer.java:269)
+[17:20:28] [Server thread/WARN]: 	at net.minecraft.server.v1_9_R1.MinecraftServer.run(MinecraftServer.java:527)
+[17:20:28] [Server thread/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[17:20:28] [Server thread/WARN]: Caused by: java.io.FileNotFoundException: https://facepunch.com/image.php?u=673224&dateline=1417533773
+[17:20:28] [Server thread/WARN]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+[17:20:28] [Server thread/WARN]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+[17:20:28] [Server thread/WARN]: 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+[17:20:28] [Server thread/WARN]: 	at java.net.URL.openStream(Unknown Source)
+[17:20:28] [Server thread/WARN]: 	... 15 more
+[17:20:28] [Server thread/INFO]: [MOTDColor] MOTDColor: icon not loaded.
+[17:20:28] [Server thread/INFO]: [MOTDColor] MOTDColor enabled!
+[17:20:28] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn vTeamCity
+[17:20:28] [Server thread/INFO]: [dynmap] Enabling dynmap v2.3-SNAPSHOT-1139
+[17:20:28] [Server thread/INFO]: [dynmap] Added 1 custom biome mappings
+[17:20:28] [Server thread/INFO]: [dynmap] Using GroupManager 2.0 (Phoenix) for access control
+[17:20:29] [Thread-18/INFO]: [ClearLag] Updating finished! Restart your server for files to take effect
+[17:20:30] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[17:20:30] [Server thread/INFO]: [dynmap] Loaded 23 shaders.
+[17:20:30] [Server thread/INFO]: [dynmap] Loaded 82 perspectives.
+[17:20:30] [Server thread/INFO]: [dynmap] Loaded 14 lightings.
+[17:20:31] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[17:20:31] [Server thread/INFO]: [dynmap] version 2.3-SNAPSHOT-1139 is enabled - core version 2.3-SNAPSHOT-2072
+[17:20:31] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[17:20:31] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[17:20:31] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[17:20:31] [Server thread/INFO]: [dynmap] Enabled
+[17:20:31] [Server thread/INFO]: [LogEx] Enabling LogEx v1.6.6-CU
+[17:20:31] [Server thread/INFO]: [LogEx] LogEx 1.6.6-CU will be loaded...
+[17:20:31] [Server thread/INFO]: [LogEx] Statistics initiated in 139ms!
+[17:20:31] [Server thread/INFO]: [LogEx] LogEx 1.6.6-CU: Data loaded successfully
+[17:20:31] [Server thread/INFO]: [LogEx] LogEx 1.6.6-CU was loaded in 259ms!
+[17:20:31] [Server thread/INFO]: [ArmorHUD] Enabling ArmorHUD v1.12
+[17:20:31] [Server thread/INFO]: [dynmap-mobs] Enabling dynmap-mobs v1.3
+[17:20:31] [Server thread/INFO]: [dynmap-mobs] initializing
+[17:20:31] [Server thread/INFO]: [dynmap-mobs] Enable layer for mobs
+[17:20:31] [Server thread/INFO]: [dynmap-mobs] Layer for vehicles disabled
+[17:20:31] [Server thread/INFO]: [dynmap-mobs] version 1.3 is activated
+[17:20:31] [Server thread/INFO]: [SkyWars] Enabling SkyWars v2.1.4
+[17:20:32] [Server thread/INFO]: [SkyWars] [Translations] Loading locale en.
+[17:20:32] [Server thread/INFO]: [SkyWars] Using WorldEdit hook for arena creation.
+[17:20:32] [Server thread/INFO]: [SkyWars] [Score] Using JSON backend
+[17:20:32] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:20:32] [Server thread/INFO]: Done (12.379s)! For help, type "help" or "?"
+[17:20:32] [Server thread/INFO]: [SkyWars] Loading world 'SkyWarsArenaWorld'.
+[17:20:32] [Server thread/INFO]: -------- World Settings For [SkyWarsArenaWorld] --------
+[17:20:32] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:20:32] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:20:32] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:20:32] [Server thread/INFO]: View Distance: 10
+[17:20:32] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:20:32] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:20:32] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:20:32] [Server thread/INFO]: Max Entity Collisions: 8
+[17:20:32] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[17:20:32] [Server thread/INFO]: Mob Spawn Range: 4
+[17:20:32] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:20:32] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:20:32] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:20:32] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:20:32] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:20:32] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:20:32] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:20:32] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:20:32] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:20:32] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[17:20:32] [Server thread/INFO]: Max TNT Explosions: 100
+[17:20:32] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:20:32] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:20:32] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[17:20:32] [Server thread/INFO]: Random Lighting Updates: false
+[17:20:32] [Server thread/INFO]: Structure Info Saving: true
+[17:20:32] [Server thread/INFO]: Preparing start region for level 3 (Seed: 0)
+[17:20:33] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'SkyWarsArenaWorld'.
+[17:20:33] [Server thread/INFO]: [SkyWars] Done loading world 'SkyWarsArenaWorld'.
+[17:20:33] [Server thread/INFO]: GroupManager - INFO - Bukkit Permissions Updated!
+[17:20:33] [Craft Scheduler Thread - 6/INFO]: [Vault] Checking for Updates ... 
+[17:20:33] [Craft Scheduler Thread - 6/WARN]: [Vault] Stable Version: 1.7.3 is out! You are still running version: 1.5.6
+[17:20:33] [Craft Scheduler Thread - 6/WARN]: [Vault] Update at: http://dev.bukkit.org/server-mods/vault
+[17:21:37] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
+[17:25:38] [User Authenticator #1/INFO]: UUID of player ChrisTJie is 16598a9d-4e2f-39e6-a47e-4ccfef65258b
+[17:25:39] [Server thread/INFO]: ChrisTJie[/127.0.0.1:58417] logged in with entity id 748 at ([world]200.5, 69.0, 125.5)
+[17:25:39] [pool-6-thread-1/INFO]: Creating empty config: D:\Projects\Minecraft Server 1.9\plugins\Essentials\userdata\16598a9d-4e2f-39e6-a47e-4ccfef65258b.yml
+[17:26:45] [Server thread/INFO]: ChrisTJie has just earned the achievement [Taking Inventory]
+[17:28:01] [Server thread/INFO]: [ClearLag] 警告!優化程序將在 60 秒後執行!
+[17:28:42] [AutoSaveWorld AutoSaveThread/INFO]: 自動儲存中...
+[17:28:43] [AutoSaveWorld AutoSaveThread/INFO]: 自動儲存完成.
+[17:28:49] [Server thread/INFO]: [ClearLag] 警告!優化程序將在 20 秒後執行!
+[17:29:13] [Server thread/INFO]: [ClearLag] 已優化了 3 個實體!
+[17:30:25] [pool-8-thread-1/INFO]: GroupManager - INFO -  Data files refreshed.
+[17:32:16] [Server thread/INFO]: ChrisTJie was pricked to death
+[17:32:22] [Server thread/INFO]: ChrisTJie lost connection: Disconnected
+[17:32:22] [Server thread/INFO]: ChrisTJie left the game.
+[17:32:41] [Server thread/INFO]: Stopping the server
+[17:32:41] [Server thread/INFO]: Stopping server
+[17:32:41] [Server thread/INFO]: [SkyWars] Disabling SkyWars v2.1.4
+[17:32:41] [Server thread/INFO]: [SkyWars] Saving configuration
+[17:32:41] [Server thread/INFO]: [SkyWars] Unloading arena world - without saving
+[17:32:41] [Server thread/INFO]: [dynmap] Saved 31 pending tile renders in world 'SkyWarsArenaWorld'
+[17:32:41] [Server thread/INFO]: [SkyWars] Cleaning up: Deleting .\SkyWarsArenaWorld
+[17:32:41] [Server thread/INFO]: [SkyWars] SkyWars disabled successfully
+[17:32:41] [Server thread/INFO]: [dynmap-mobs] Disabling dynmap-mobs v1.3
+[17:32:41] [Server thread/INFO]: [ArmorHUD] Disabling ArmorHUD v1.12
+[17:32:41] [Server thread/INFO]: [LogEx] Disabling LogEx v1.6.6-CU
+[17:32:41] [Server thread/INFO]: [LogEx] LogEx 1.6.6-CU will be shutdown...
+[17:32:41] [Server thread/INFO]: [LogEx] LogEx 1.6.6-CU was shutted down!
+[17:32:41] [Server thread/INFO]: [dynmap] Disabling dynmap v2.3-SNAPSHOT-1139
+[17:32:41] [Server thread/INFO]: [dynmap] Unloaded 11 components.
+[17:32:41] [Server thread/INFO]: [dynmap] Stopping map renderer...
+[17:32:41] [Server thread/INFO]: [dynmap] Saved 23 pending tile renders in world 'world'
+[17:32:41] [Server thread/INFO]: [dynmap] Disabled
+[17:32:41] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn vTeamCity
+[17:32:41] [Server thread/INFO]: [ClockSign] Disabling ClockSign v1.7
+[17:32:41] [Server thread/INFO]: [ClockSign] Saving all clocks to file...
+[17:32:41] [Server thread/INFO]: [ClockSign] Saved all clocks to file!
+[17:32:41] [Server thread/INFO]: [ClockSign] ClockSign v1.7 disabled!
+[17:32:41] [Server thread/INFO]: [Vault] Disabling Vault v1.5.6-b49
+[17:32:41] [Server thread/INFO]: [MOTDColor] Disabling MOTDColor v0.5
+[17:32:41] [Server thread/INFO]: [MOTDColor] MOTDColor disabled!
+[17:32:41] [Server thread/INFO]: [TimeIsMoney] Disabling TimeIsMoney v1928
+[17:32:41] [Server thread/INFO]: [EssentialsAntiBuild] Disabling EssentialsAntiBuild vTeamCity
+[17:32:41] [Server thread/INFO]: [EssentialsGeoIP] Disabling EssentialsGeoIP vTeamCity
+[17:32:41] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat vTeamCity
+[17:32:41] [Server thread/INFO]: [VK] Disabling VoteKick v2.0
+[17:32:41] [Server thread/INFO]: [VK] VoteKick version 2.0 by [Shayana] disabled !
+[17:32:41] [Server thread/INFO]: [EssentialsProtect] Disabling EssentialsProtect vTeamCity
+[17:32:41] [Server thread/INFO]: [GUIShop] Disabling GUIShop v4.2.4
+[17:32:41] [Server thread/INFO]: [AutoSaveWorld] Disabling AutoSaveWorld v4.14.2
+[17:32:41] [Server thread/INFO]: 自動儲存中...
+[17:32:41] [Server thread/INFO]: 自動儲存完成.
+[17:32:46] [Server thread/INFO]: [More-Mobs] Disabling More-Mobs v3.0.2
+[17:32:46] [Server thread/INFO]: [GravelClay] Disabling GravelClay v1.3.5
+[17:32:46] [Server thread/INFO]: [GravelClay] version 1.3.5 is disabled.
+[17:32:46] [Server thread/INFO]: [Lockette] Disabling Lockette v1.8.23
+[17:32:46] [Server thread/INFO]: Lockette is being disabled...  ;.;
+[17:32:46] [Server thread/INFO]: [Lockette] Closing all automatic doors.
+[17:32:46] [Server thread/INFO]: [NewTag] Disabling NewTag v1.4
+[17:32:46] [Server thread/INFO]: [BurningMobs] Disabling BurningMobs v0.8.0
+[17:32:46] [Server thread/INFO]: [BurningMobs] v0.8.0 stopped successfully!
+[17:32:46] [Server thread/INFO]: [ClearLag] Disabling ClearLag v2.9.1
+[17:32:46] [Server thread/INFO]: [ClearLag] Nullifying static fields..
+[17:32:46] [Server thread/INFO]: [ClearLag] Clearlag is now disabled!
+[17:32:46] [Server thread/INFO]: [GroupManager] Disabling GroupManager v2.0 (Phoenix)
+[17:32:46] [Server thread/INFO]: WEPIF: GroupManager detected! Using GroupManager for permissions.
+[17:32:46] [Server thread/INFO]: GroupManager - INFO - Scheduled Data Saving is disabled!
+[17:32:46] [Server thread/INFO]: GroupManager version 2.0 (Phoenix) is disabled!
+[17:32:46] [Server thread/INFO]: [Essentials] Disabling Essentials vTeamCity
+[17:32:46] [Server thread/INFO]: Essentials: Using config file enhanced permissions.
+[17:32:46] [Server thread/INFO]: Permissions listed in as player-commands will be given to all users.
+[17:32:46] [Server thread/INFO]: [AntiCreeper] Disabling AntiCreeper v4.19
+[17:32:46] [Server thread/INFO]: [HealthBar] Disabling HealthBar v1.8.3
+[17:32:46] [Server thread/INFO]: HealthBar disabled, all the health bars have been removed.
+[17:32:46] [Server thread/INFO]: [AFK] Disabling AFK v4.5.0
+[17:32:46] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.2;b3fbe8b
+[17:32:46] [Server thread/INFO]: Saving players
+[17:32:46] [Server thread/INFO]: Saving worlds
+[17:32:46] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[17:32:46] [Server thread/INFO]: Saving chunks for level 'world_nether'/Nether
+[17:32:46] [Server thread/INFO]: Saving chunks for level 'world_the_end'/The End

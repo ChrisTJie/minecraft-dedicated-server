@@ -1,0 +1,15 @@
+broadcast:
+  pre: '&9自動儲存中...'
+  post: '&9自動儲存完成.'
+broadcastbackup:
+  pre: '&9自動備份中...'
+  post: '&9自動備份完成.'
+broadcastpurge:
+  pre: '&9自動清除中...'
+  post: '&9自動清除完成.'
+insufficentpermissions: '&c您沒有權限訪問該指令.'
+autorestart:
+  restarting: '&9伺服器重新啟動中...'
+  countdown: '&9伺服器將在 {SECONDS} 秒後重新啟動.'
+worldregen:
+  kickmessage: '&9伺服器正在重新建構世界，請稍後...'

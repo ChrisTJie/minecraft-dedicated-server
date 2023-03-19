@@ -1,0 +1,4 @@
+main: fr.calvineries.playerjoinevent.PlayerJoinEvent
+name: PlayerJoinEvent
+version: 21.4
+author: Calvineries

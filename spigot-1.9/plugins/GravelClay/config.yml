@@ -1,0 +1,6 @@
+basic:
+  blockconvert: 'true'
+  itemconvert: 'true'
+  claydustcount: 4
+  userecipe: 'true'
+ignoredworlds: ''

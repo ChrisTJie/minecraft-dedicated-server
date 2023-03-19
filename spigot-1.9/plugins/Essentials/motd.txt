@@ -1,0 +1,4 @@
+&d歡迎玩家~*, {PLAYER}&6!
+&e輸入 &c/help&6 來查詢指令集!.
+&e輸入 &c/list&6 查看線上的玩家!.
+&a線上玩家人數:&c {ONLINE} &9- 世界時間:&c {WORLDTIME12}

@@ -1,0 +1,6 @@
+name: dynmap-mobs
+main: org.dynmap.mobs.DynmapMobsPlugin
+version: "1.3"
+author: mikeprimm
+depend: [ dynmap ]
+

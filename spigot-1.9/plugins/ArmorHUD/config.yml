@@ -1,0 +1,8 @@
+debugging: false
+permission-system: none
+compatibility-mode: false
+startup-mode: 'off'
+startup-message: true
+percentage: false
+fixed-position: false
+blocked-worlds: ''

@@ -1,0 +1,10 @@
+BuildTools
+unconfigured@null.spigotmc.org
+Attempting to build version: '1.5.2.json' use --rev <version> to override
+Could not get version 1.5.2.json does it exist? Try another version or use 'latest'
+java.io.FileNotFoundException: https://hub.spigotmc.org/versions/1.5.2.json.json
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.spigotmc.builder.Builder.get(Builder.java:481)
+	at org.spigotmc.builder.Builder.main(Builder.java:236)

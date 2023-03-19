@@ -1,0 +1,128 @@
+# ####### water-warriors.yml ###
+# This is the Skyblock Warriors arena config.
+# 
+# All values that are not in this configuration will be inherited from
+#  arena-parent.yml
+# 
+# All comment changes will be removed.
+# 
+# For documentation, please visit 
+# https://dabo.guru/projects/skywars/configuring-arenas
+# #######
+config-version: 2
+spawns:
+- x: 20.5
+  y: 4.0
+  z: 36.5
+- x: 5.5
+  y: 4.0
+  z: 21.5
+- x: 20.5
+  y: 4.0
+  z: 6.5
+- x: 35.5
+  y: 4.0
+  z: 21.5
+num-teams: 4
+team-size: 1
+boundaries:
+  building:
+    min:
+      x: -2
+      y: -20
+      z: -2
+    max:
+      x: 41
+      y: 24
+      z: 42
+  clearing:
+    min:
+      x: -3
+      y: -20
+      z: -3
+    max:
+      x: 42
+      y: 25
+      z: 43
+placement-y: 20
+chests:
+- location:
+    x: 3
+    y: 4
+    z: 21
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30
+- location:
+    x: 20
+    y: 4
+    z: 4
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30
+- location:
+    x: 20
+    y: 4
+    z: 21
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30
+- location:
+    x: 20
+    y: 4
+    z: 38
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30
+- location:
+    x: 37
+    y: 4
+    z: 21
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30
+- location:
+    x: 10
+    y: 8
+    z: 11
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30
+- location:
+    x: 10
+    y: 8
+    z: 31
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30
+- location:
+    x: 30
+    y: 8
+    z: 11
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30
+- location:
+    x: 30
+    y: 8
+    z: 31
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30
+- location:
+    x: 20
+    y: 20
+    z: 21
+  randomize: false
+  total-level: 30
+  min-item-value: 0
+  max-item-value: 30

@@ -1,0 +1,9 @@
+main: net.Thunder.DragonCast.DragonCast
+name: DragonCast
+version: 1.4
+description: A Boss Bar Automessager
+author: Thunder
+website: http://www.toxicop.me
+commands:
+     dragoncast:
+          aliases: [dc, dragonc, dcast, caster]

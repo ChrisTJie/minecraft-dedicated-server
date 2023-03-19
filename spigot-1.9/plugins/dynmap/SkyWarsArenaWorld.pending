@@ -1,0 +1,88 @@
+tiles:
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 27,4,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 27,5,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 28,0,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 28,1,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 28,2,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 28,3,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 28,4,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 28,5,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 29,0,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 29,1,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 29,2,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 29,3,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 29,4,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 30,0,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 30,1,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 30,2,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 30,3,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 31,0,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 31,1,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 31,2,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 31,3,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 32,0,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 32,1,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 32,2,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 32,3,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 33,0,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 33,1,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 33,2,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 34,0,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 34,1,iso_SE_30_hires,0
+-   class: org.dynmap.hdmap.HDMapTile
+    data: 34,2,iso_SE_30_hires,0
+invalid:
+    ct: [
+        ]
+    t: [
+        ]
+    flat: [
+        ]
+invZoomOut:
+    t:
+    - [
+        ]
+    - &id001 [
+        ]
+    - *id001
+    - *id001
+    - *id001
+    - *id001
+    - *id001
+    -   - 0/0:0/8000000:0/8000000:0/8000000:0/8000000:0/0:0/4000000:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0:0/0
+    - *id001
+    - *id001
+    - *id001
+    - *id001
+    - *id001
+    - *id001

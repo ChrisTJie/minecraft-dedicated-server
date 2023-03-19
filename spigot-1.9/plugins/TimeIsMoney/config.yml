@@ -1,0 +1,39 @@
+give_money_every_second: 600
+afk_payout: false
+#You can add more payouts by copy and paste them. Don't forget to change the numbers!
+store-money-in-bank: true
+#Set choose-payout-by-chance to true in order to choose the payouts by chances. Replace the "permission" to "chance", e.g. chance: 20. 
+choose-payout-by-chance: false
+payouts:
+  1:
+    payout_amount: 20
+    max_payout_per_day: 1000
+    #chance: 10
+    permission:
+  2:
+    payout_amount: 50
+    max_payout_per_day: 10000
+    commands:
+      - /give %player% diamond 1
+    #chance: 90
+    permission: tim.vip
+message: "&a恭喜您獲得了 &cNT $%money% &a!並且持續遊玩了 10 分鐘以上!"
+message_payoutlimit_reached: "&c您今天已獲得超過上限金額,沒有獲得任何金額 NT $0."
+message_afk: "&c您並沒有獲得任何的獎勵,原因是不能掛機."
+message_actionbar: "&a恭喜您獲得了 &cNT $%money% &a!並且持續遊玩了 10 分鐘以上!"
+message_payoutlimit_reached_actionbar: "&c您今天已獲得超過上限金額,沒有獲得任何金額 NT $0."
+message_afk_actionbar: "&c您並沒有獲得任何的獎勵,原因是不能掛機."
+display-messages-in-chat: true
+display-messages-in-actionbar: true
+display-messages-in-actionbar-time: 10
+#ATM -> Place down a sign with [atm] on the first line to use it!
+message_atm_noperms: "&c您沒有權限使用自動櫃員機 [ATM]"
+message_atm_nomoneyinbank: "&c您的銀行戶頭裡沒有足夠的金錢"
+message_atm_nomoney: "&c您沒有足夠的金錢!"
+atm_title: "&cATM 自動櫃員機"
+atm_withdraw: "&c撤回"
+atm_deposit: "&c存款"
+atm_balance: "&c銀行戶頭餘額:"
+auto-update: true
+debug-log: false
+configuration-version: 12
