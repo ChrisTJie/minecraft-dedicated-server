@@ -1,0 +1,55 @@
+basic:
+  level: 1
+  color: WHITE
+  enchantments: none
+  bonuses:
+    damage: 0
+    armor: 0
+    food: 0
+    ratio: 0
+    fishing: 0
+    fuel: 0
+good:
+  level: 5
+  color: YELLOW
+  enchantments: none
+  bonuses:
+    damage: 2
+    armor: 2
+    food: 1
+    ratio: 5
+    fishing: 0.1
+    fuel: 2
+better:
+  level: 10
+  color: GOLD
+  enchantments: none
+  bonuses:
+    damage: 4
+    armor: 4
+    food: 2
+    ratio: 10
+    fishing: 0.2
+    fuel: 4
+great:
+  level: 15
+  color: RED
+  enchantments: none
+  bonuses:
+    damage: 6
+    armor: 6
+    food: 3
+    ratio: 15
+    fishing: 0.3
+    fuel: 6
+best:
+  level: 20
+  color: AQUA
+  enchantments: none
+  bonuses:
+    damage: 8
+    armor: 8
+    food: 4
+    ratio: 20
+    fishing: 0.4
+    fuel: 8

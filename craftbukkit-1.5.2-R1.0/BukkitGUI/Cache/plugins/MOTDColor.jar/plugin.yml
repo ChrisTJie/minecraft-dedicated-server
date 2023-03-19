@@ -1,0 +1,17 @@
+name: MOTDColor
+version: 0.4
+main: MOTDColor.MOTDColor
+autor: d33k40
+commands:
+   motdc:
+      description: Change your motdc
+      usage: /motdc Your motd
+      permission: motdc
+   motdcformat:
+      description: Format codes
+      usage: /motdcformat
+      permission: motdc.format
+   motdcreload:
+      description: Reload MOTDColor
+      usage: /motdcreload
+      permission: motdc.reload

@@ -1,0 +1,14 @@
+name: SmartRestart
+version: 0.4
+description: SmartRestart Design in Taiwan By Candy-sky.net
+author: Candy,kgame
+website: http://candy-sky.net/
+
+main: tw.candy.SmartRestart.SmartRestart
+
+commands:
+   sr:
+      description: This is a SmartRestart command.
+      usage: /sr
+      permission: smartrestart.sr
+      permission-message: You don't have <permission>

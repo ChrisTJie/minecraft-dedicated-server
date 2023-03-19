@@ -1,0 +1,6 @@
+author: TehRainbowGuy
+database: false
+main: me.rainbow.playerzombies.Core
+name: PlayerZombies
+startup: postworld
+version: '0.4'

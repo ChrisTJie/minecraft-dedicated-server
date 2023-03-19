@@ -1,0 +1,38 @@
+general:
+  use permissions: false
+  item description color: GRAY
+  item experience bar color: WHITE
+  crafting ratio: 2
+  maximum level: 20
+  normal items enabled: true
+  experience on level up: 10
+  experience per hit: 5
+  experience per kill:
+    creeper: 10
+    skeleton: 8
+    spider: 8
+    zombie: 8
+    slime: 5
+    ghast: 25
+    pig zombie: 10
+    enderman: 30
+    cave spider: 15
+    silverfish: 30
+    blaze: 20
+    magma cube: 20
+    bat: 5
+    witch: 20
+    pig: 5
+    sheep: 5
+    cow: 5
+    chicken: 5
+    squid: 5
+    wolf: 15
+    mooshroom: 8
+    ocelot: 15
+    villager: 10
+    ender dragon: 2000
+    player: 50
+  disabled items: none
+  disable mob spawners: true
+  allow stacks: false

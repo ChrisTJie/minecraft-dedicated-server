@@ -1,0 +1,21 @@
+weapons:
+  stages: basic, good, better, great, best
+  bonuses: damage
+items:
+  stages: basic, good, better, great, best
+  bonuses: none
+armor:
+  stages: basic, good, better, great, best
+  bonuses: armor
+tools:
+  stages: basic, good, better, great, best
+  bonuses: none
+blocks:
+  stages: basic, good, better, great, best
+  bonuses: none
+food:
+  stages: basic, good, better, great, best
+  bonuses: heal
+crafting:
+  stages: basic, good, better, great, best
+  bonuses: ratio

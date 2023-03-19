@@ -1,0 +1,6 @@
+name: TabHealth
+main: com.recon.TabHealth.TabHealth
+version: 1.1
+author: recon88
+website: www.cCraft.eu
+description: Shows the players health in the TAB board.

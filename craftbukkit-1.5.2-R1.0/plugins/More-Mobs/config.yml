@@ -1,0 +1,46 @@
+#=============================================================
+# Configuration Settings for MoreMobs
+# Written by Dibujaron and ObliviusMinecraft
+# http://dev.bukkit.org/server-mods/more-mobs/
+#=============================================================
+
+#=============================================================
+#Mob that each MoreMob will replace when it is spawned
+#Available types: ZOMBIE, SPIDER, SKELETON, PIG_ZOMBIE, GHAST
+#CAVE_SPIDER, MAGMA_CUBE, SLIME, CREEPER, ENDERMAN
+#=============================================================
+
+giantZombieReplaceType: ZOMBIE
+giantSlimeReplaceType: SLIME
+giantMagmaCubeReplaceType: MAGMA_CUBE
+wraithReplaceType: SPIDER
+heroBlockReplaceType: SKELETON
+babyZombieReplaceType: ENDERMAN
+
+#=============================================================
+#Spawn Chances of each mob, out of 100. For every 100 of the
+#replace mob that is spawned, this many of them will be replaced
+#with their cooresponding MoreMob. For Example, if
+#GiantZombieReplaceType is set to ZOMBIE and GiantZombieChance
+#is set to 2, then for every 100 zombies that spawn, 2 of them
+#will turn into Giant Zombies.
+#=============================================================
+
+GiantZombieChance: 1
+GiantSlimeChance: 1
+GiantMagmaCubeChance: 1
+WraithChance: 1
+HeroBlockChance: 1
+BabyZombieChance: 1
+
+#=============================================================
+#Wraith Hell configuration. These values can be modified here,
+#or be set by command /setWraithHell ingame.
+#=============================================================
+
+useWraithHell: true
+
+wraithHellWorld: world_nether
+wraithHellX: 100
+wraithHellY: 10
+wraithHellZ: 100

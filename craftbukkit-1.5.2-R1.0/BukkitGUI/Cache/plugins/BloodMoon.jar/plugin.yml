@@ -1,0 +1,5 @@
+name: "BloodMoon"
+version: "0.24-SNAPSHOT"
+main: "uk.co.jacekk.bukkit.bloodmoon.BloodMoon"
+website: "http://dev.bukkit.org/server-mods/bloodmoon/"
+load: startup

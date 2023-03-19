@@ -1,0 +1,986 @@
+# Bleeding Mobs config
+# Don't use tabs in this file
+# You can always reset this to the defaults by removing the file.
+# Chances are from 0 to 100, no fractions allowed. 100 means 100% chance of drop.
+# There is no chance value for the particle material (e.g. redstone), 
+# because it's calculated from the wool and bone chances (so if you set them both to 0, it's 100%).
+# All time values are in ticks = 1/20th of a second.
+# If there are from and to values, then the value is randomly selected between from and to.
+# Wool colors: white, orange, magenta, light-blue, yellow, lime, pink,
+# gray, silver, cyan, purple, blue, brown, green, red, black
+# When permission-only is set, then everything will only bleed, when they are hit 
+# by a player with bleedingmobs.bloodstrike permission. 
+# This will disable bleeding on death and on fall damage.
+
+enabled: true
+max-particles: 2000
+bleed-when-canceled: false
+show-metrics-info: false
+check-for-updates: true
+permission-only: false
+attack-percentage: 100
+fall-percentage: 60
+death-percentage: 200
+projectile-percentage: 60
+bloodstream:
+  percentage: 10
+  time: 200
+  interval: 10
+creeper:
+  wool-chance: 50
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: lime
+  stains-floor: false
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 5
+    to: 15
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: sulphur
+skeleton:
+  wool-chance: 0
+  bone-chance: 100
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: white
+  stains-floor: false
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 5
+    to: 15
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: bone
+spider:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+giant:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+zombie:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+slime:
+  wool-chance: 0
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: green
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 5
+    to: 15
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: slime-ball
+ghast:
+  wool-chance: 0
+  bone-chance: 100
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: white
+  stains-floor: false
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 5
+    to: 15
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: bone
+pigzombie:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+enderman:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: black
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: coal
+cavespider:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+silverfish:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+blaze:
+  wool-chance: 0
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: yellow
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: blaze-powder
+magmacube:
+  wool-chance: 0
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: green
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 5
+    to: 15
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: slime-ball
+enderdragon:
+  wool-chance: 50
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: black
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 25
+    to: 35
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: coal
+wither:
+  wool-chance: 50
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: black
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 25
+    to: 35
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: coal
+bat:
+  wool-chance: 20
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 5
+    to: 15
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: coal
+witch:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+pig:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+sheep:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+cow:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+chicken:
+  wool-chance: 20
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 5
+    to: 15
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: feather
+squid:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+wolf:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+mushroomcow:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: red-mushroom
+snowman:
+  wool-chance: 50
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: white
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: snow-ball
+ocelot:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+irongolem:
+  wool-chance: 50
+  bone-chance: 0
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: silver
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: iron-ingot
+villager:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+player:
+  wool-chance: 50
+  bone-chance: 50
+  particle-life:
+    from: 5
+    to: 15
+  wool-color: red
+  stains-floor: true
+  bone-life: 100
+  stain-life:
+    from: 80
+    to: 120
+  amount:
+    from: 15
+    to: 25
+  saturated-materials:
+  - stone
+  - grass
+  - dirt
+  - cobblestone
+  - wood
+  - sand
+  - gravel
+  - sandstone
+  - wool
+  - double-step
+  - brick
+  - mossy-cobblestone
+  - snow-block
+  - clay
+  - netherrack
+  - soul-sand
+  particle-material: redstone
+worlds: []

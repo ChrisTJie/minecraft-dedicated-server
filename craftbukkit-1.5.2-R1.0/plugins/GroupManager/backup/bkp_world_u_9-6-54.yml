@@ -1,0 +1,84 @@
+users:
+  03718575-efa2-487c-9895-0a3269e9c252:
+    lastname: OuO_RedCAT
+    group: Builder
+    subgroups: []
+    permissions: []
+  07273cea-1acf-4f33-a0c1-a52def41e248:
+    lastname: Christmas
+    group: Owner
+    subgroups: []
+    permissions: []
+  0fa89ac8-a02b-44b5-b5a8-8932c8405b41:
+    lastname: Trinialen
+    group: Builder
+    subgroups: []
+    permissions: []
+  8a50e610-2181-4fc5-85eb-0583490a4596:
+    lastname: umi1981
+    group: Moderator
+    subgroups: []
+    permissions: []
+  90c01a5b-ce39-47a4-b030-0eeb9e6bd43a:
+    lastname: WinterNoxus
+    group: Builder
+    subgroups: []
+    permissions: []
+  b5d96f27-79ef-4190-bcb6-39c015689e64:
+    lastname: serega996
+    group: Builder
+    subgroups: []
+    permissions: []
+  c0a7fc88-7662-442b-ac97-21045d89856c:
+    lastname: ejdme
+    group: Default
+    subgroups: []
+    permissions:
+    - builder
+  cdb7a786-04ad-4a4b-8d14-42e8e7c84186:
+    lastname: Dream_FLD
+    group: Moderator
+    subgroups: []
+    permissions: []
+  da0ecbce-de6a-4107-b39c-16fd8ecce1f9:
+    lastname: Snuggletummy
+    group: Builder
+    subgroups: []
+    permissions: []
+  de8c13a9-e0e0-48c4-85d4-9292766e304d:
+    lastname: SmallMaple
+    group: Owner
+    subgroups: []
+    permissions: []
+  df2320f6-1a4b-4faa-ae49-205aba80cea8:
+    lastname: Razorlance
+    group: Builder
+    subgroups: []
+    permissions: []
+  ElgarL:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  f5a9d066-b51f-4322-9ae2-df90bed70a2c:
+    lastname: leosf5637
+    group: Default
+    subgroups: []
+    permissions:
+    - builder
+  ff19b0a8-4bf3-49c4-81f8-59b5d3512e9d:
+    lastname: sk8erace1
+    group: Builder
+    subgroups: []
+    permissions:
+    - builder
+  KHobbits:
+    group: Moderator
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  snowleo:
+    group: Builder
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms

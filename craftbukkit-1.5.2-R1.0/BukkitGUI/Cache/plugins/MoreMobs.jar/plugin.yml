@@ -1,0 +1,14 @@
+name: More-Mobs
+main: com.dibujaron.MoreMobs.MoreMobsCore
+version: 3.0.2
+dev-url: http://dev.bukkit.org/server-mods/more-mobs/
+website: http://dev.bukkit.org/server-mods/more-mobs/
+author: dibujaron
+
+commands:
+   moremobs:
+      description: The base command for moremobs.
+      usage: /moremobs <type>
+   setWraithHell:
+      description: Set where wraiths send you.
+      usage: /setWraithHell

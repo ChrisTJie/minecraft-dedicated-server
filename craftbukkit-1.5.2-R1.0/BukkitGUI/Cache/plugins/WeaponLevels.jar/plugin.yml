@@ -1,0 +1,52 @@
+name: WeaponLevels
+author: TheRealNovus
+main: com.coffeecup.novus.weaponlevels.WLPlugin
+version: 1.2.6
+softdepend: [bPermissions]
+
+commands:
+  wl:
+    description: The main command.
+    usage: /<command>
+    
+permissions:
+  weaponlevels.*:
+    description: Allows full plugin usage.
+    default: false
+    children:
+      weaponlevels.basic: true
+      weaponlevels.good: true
+      weaponlevels.better: true
+      weaponlevels.great: true
+      weaponlevels.best: true
+      weaponlevels.reload: true
+  weaponlevels.null:
+    description: Used if no stages are available. Should never be false.
+    default: true
+  weaponlevels.basic:
+    description: Allows usage of the "basic" level.
+    default: true
+  weaponlevels.good:
+    description: Allows usage of the "good" level.
+    children:
+      weaponlevels.basic: true
+  weaponlevels.better:
+    description: Allows usage of the "better" level.
+    children:
+      weaponlevels.basic: true
+      weaponlevels.good: true
+  weaponlevels.great:
+    description: Allows usage of the "great" level.
+    children:
+      weaponlevels.basic: true
+      weaponlevels.good: true
+      weaponlevels.better: true
+  weaponlevels.best:
+    description: Allows usage of the "best" level.
+    children:
+      weaponlevels.basic: true
+      weaponlevels.good: true
+      weaponlevels.better: true
+      weaponlevels.great: true
+  weaponlevels.reload:
+    description: Allows usage of the reload command.

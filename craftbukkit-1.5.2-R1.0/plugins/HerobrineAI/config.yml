@@ -1,0 +1,79 @@
+config:
+  ShowInterval: 30000
+  ShowRate: 1
+  HitPlayer: false
+  SendMessages: true
+  Lighting: true
+  DestroyTorches: false
+  DestroyTorchesRadius: 5
+  Worlds:
+  - world
+  TotemExplodes: true
+  OnlyWalkingMode: false
+  BuildStuff: true
+  PlaceSigns: true
+  UseTotem: true
+  WriteBooks: true
+  Killable: true
+  UsePotionEffects: true
+  CaveChance: 2
+  BookChance: 1
+  SignChance: 1
+  DeathMessage: You cannot kill me!
+  Messages:
+  - Even Notch can?t save you now!
+  - Fear me!
+  - Welcome to my world!
+  - I am your death!
+  - Grave awaits you!
+  SignMessages:
+  - I?m watching.
+  - Death...
+  - Eyes in dark...
+  BookMessages:
+  - White eyes in dark...
+  - '... was last what I saw ...'
+  - '... before i was dead.'
+  Drops:
+    '264':
+      count: 1
+      chance: 20
+  BuildPyramids: true
+  UseGraveyardWorld: true
+  BuryPlayers: true
+  SpawnWolves: true
+  SpawnBats: true
+  UseWalkingMode: true
+  WalkingModeRadius:
+    X: 1000
+    Z: 1000
+    FromX: 0
+    FromZ: 0
+  BuildInterval: 45000
+  BuildTemples: true
+  UseArtifacts:
+    Bow: true
+    Sword: true
+    Apple: true
+  HerobrineHP: 200
+  AttackCreative: true
+  AttackOP: true
+  SecuredArea:
+    Build: true
+    Attack: true
+    Haunt: true
+    Signs: true
+    Books: true
+  UseHeads: true
+  UseCustomItems: false
+  CustomItemsList:
+  - ItemExample
+  UseAncientSword: true
+  UseNPC:
+    Guardian: true
+    Warrior: true
+    Demon: true
+  ItemInHand: '0'
+  Explosions: true
+  Burn: true
+  Curse: true

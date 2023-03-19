@@ -1,0 +1,26 @@
+Percentage: true
+MinimumOnline:
+  ban: 5
+  kick: 5
+  tempban: 5
+  unban: 5
+VotesNeeded:
+  ban: 50
+  kick: 50
+  tempban: 50
+  unban: 50
+VoteLimits: true
+MaxVotes:
+  ban: 15
+  kick: 15
+  tempban: 15
+  unban: 15
+  stay: 15
+UseTimer: true
+Delay:
+  ban: 60
+  kick: 60
+  tempban: 60
+  unban: 60
+UseMaxTime: true
+MaxTimeTempBan: 120
