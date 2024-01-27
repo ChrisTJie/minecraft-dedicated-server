@@ -95,7 +95,7 @@
   "particle": {
     "type": "stack_panel",
     "orientation": "horizontal",
-    "size": [ "100%c", 30 ],
+    "size": [ "100%c", 24.8 ],
     // This stack panel is sort of ugly with offsets, but they're needed because we're shuffling around
     "controls": [
       {
@@ -146,7 +146,7 @@
     "type": "stack_panel",
     "orientation": "vertical",
     "size": [ 130, "30%" ],
-    "offset": [ 2, 45 ],
+    "offset": [ 2, 38 ],
     "anchor_from": "center",
     "anchor_to": "center",
     "layer": 2,
@@ -257,7 +257,7 @@
     "anchor_to": "top_middle",
     // Take up entire top right, lining up top with top of slider labels and left/right with inventory
     "size": [ 130, 90 ],
-    "offset": [ -4, 23 ],
+    "offset": [ -4, 13 ],
     "controls": [
       {
         "bohr@common.empty_panel": {

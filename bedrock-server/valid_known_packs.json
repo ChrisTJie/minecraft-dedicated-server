@@ -21,9 +21,9 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/experimental_vanilla_experiments",
-		"uuid" : "32b2f234-9e44-46fe-a600-54712c051d20",
-		"version" : "0.0.1"
+		"path" : "behavior_packs/vanilla_1.20.20",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.20"
 	},
 	
 	{
@@ -37,13 +37,6 @@
 		"file_system" : "RawPath",
 		"path" : "behavior_packs/vanilla",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/experimental_wild_update",
-		"uuid" : "032705f6-35dd-4761-ba1a-6f559a27cc29",
 		"version" : "0.0.1"
 	},
 	
@@ -112,6 +105,13 @@
 	
 	{
 		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.19.60",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.19.60"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "behavior_packs/vanilla_1.17.10",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.17.10"
@@ -140,9 +140,30 @@
 	
 	{
 		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.20.0",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.20.40",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.40"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "behavior_packs/vanilla_1.17.30",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.17.30"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.20.50",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.50"
 	},
 	
 	{
@@ -157,6 +178,13 @@
 		"path" : "behavior_packs/vanilla_1.18.30",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.18.30"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/experimental_villager_trade",
+		"uuid" : "0127bd67-dc5b-45c2-8d5b-1d65876d5679",
+		"version" : "0.0.1"
 	},
 	
 	{
@@ -196,24 +224,66 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/experimental_spectator",
-		"uuid" : "4bde72a9-966d-426b-8402-2a27965a27cb",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/agent_gametest",
-		"uuid" : "dba81c2c-f7b3-468e-990e-f31555ed6079",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
 		"from_disk" : true,
-		"hashes" : [ "8HB8Mnid8Ypn5WiOJeBwJ5hLbRprrS02CkPgpoHmLPI=" ],
-		"path" : "behavior_packs/editor",
-		"uuid" : "3222066e-79d0-4573-9e15-93472d32cbd5",
+		"hashes" : [ "yNqLu6W+XZoGAiWTgt4zYLUeovu3Y4pmx5/gL4b8EMI=" ],
+		"path" : "behavior_packs/test_vanilla_1.12",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.12.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.19.50",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.19.50"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.19.70",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.19.70"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.19.80",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.19.80"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.20.10",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.10"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.20.30",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.30"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/chemistry_1.20.50",
+		"uuid" : "91b9e624-dda6-43f3-a567-8025c53860b5",
+		"version" : "1.20.50"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/experimental_cameras",
+		"uuid" : "05112080-727b-4ed4-98d4-b099fc75f2be",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/experimental_update_announced_live2023",
+		"uuid" : "ddfce3eb-4cad-4816-97e2-6926393b83cb",
 		"version" : "0.0.1"
 	},
 	
@@ -224,21 +294,5 @@
 		"path" : "behavior_packs/test_vanilla_1.11",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.11.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : [ "yNqLu6W+XZoGAiWTgt4zYLUeovu3Y4pmx5/gL4b8EMI=" ],
-		"path" : "behavior_packs/test_vanilla_1.12",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.12.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_gametest",
-		"uuid" : "fd375b0a-4bdd-4572-9268-e55a79cf99d3",
-		"version" : "0.0.1"
 	}
 ]

@@ -315,7 +315,7 @@
     "size": [ "100%", "default" ],
     "anchor_from": "top_right",
     "anchor_to": "top_right",
-    "text_alignment": "right",
+    "text_alignment": "center",
     "offset": [ -8, 8 ]
   },
 
