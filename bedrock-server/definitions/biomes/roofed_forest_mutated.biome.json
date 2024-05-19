@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "roofed_forest_mutated"
@@ -22,14 +22,18 @@
         "sea_material": "minecraft:water"
       },
 
-      "animal": {},
-      "forest": {},
-      "monster": {},
-      "mutated": {},
-      "roofed": {},
-      // "overworld" tag cannot be present in order to match legacy behavior, but is
-      // required for correct world generation -- hence: overworld_generation
-      "overworld_generation": {}
+      "minecraft:tags": {
+        "tags": [
+          "animal",
+          "forest",
+          "monster",
+          "mutated",
+          "roofed",
+          // "overworld" tag cannot be present in order to match legacy behavior, but is
+          // required for correct world generation -- hence: overworld_generation
+          "overworld_generation"
+        ]
+      }
     }
   }
 }

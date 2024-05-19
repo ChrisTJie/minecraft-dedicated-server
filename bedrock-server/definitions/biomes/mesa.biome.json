@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "mesa"
@@ -34,9 +34,13 @@
         "mutate_transformation": "mesa_bryce"
       },
 
-      "mesa": {},
-      "monster": {},
-      "overworld": {}
+      "minecraft:tags": {
+        "tags": [
+          "mesa",
+          "monster",
+          "overworld"
+        ]
+      }
     }
   }
 }

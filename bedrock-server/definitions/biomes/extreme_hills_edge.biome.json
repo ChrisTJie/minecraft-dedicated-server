@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "extreme_hills_edge"
@@ -22,12 +22,16 @@
         "sea_material": "minecraft:water"
       },
 
-      "animal": {},
-      "edge": {},
-      "extreme_hills": {},
-      "monster": {},
-      "mountain": {},
-      "overworld": {}
+      "minecraft:tags": {
+        "tags": [
+          "animal",
+          "edge",
+          "extreme_hills",
+          "monster",
+          "mountain",
+          "overworld"
+        ]
+      }
     }
   }
 }

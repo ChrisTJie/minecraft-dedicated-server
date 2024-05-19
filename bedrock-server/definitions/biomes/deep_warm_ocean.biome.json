@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "deep_warm_ocean"
@@ -22,11 +22,15 @@
         "sea_material": "minecraft:water"
       },
 
-      "deep": {},
-      "monster": {},
-      "ocean": {},
-      "overworld": {},
-      "warm": {}
+      "minecraft:tags": {
+        "tags": [
+          "deep",
+          "monster",
+          "ocean",
+          "overworld",
+          "warm"
+        ]
+      }
     }
   }
 }

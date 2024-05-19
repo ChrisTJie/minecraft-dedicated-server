@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "desert"
@@ -36,9 +36,13 @@
         ]
       },
 
-      "desert": {},
-      "monster": {},
-      "overworld": {}
+      "minecraft:tags": {
+        "tags": [
+          "desert",
+          "monster",
+          "overworld"
+        ]
+      }
     }
   }
 }

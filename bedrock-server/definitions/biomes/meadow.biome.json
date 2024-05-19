@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "meadow"
@@ -22,11 +22,15 @@
           "enabled": false
         }
       },
-      "mountains": {},
-      "monster": {},
-      "overworld": {},
-      "meadow": {},
-      "bee_habitat": {}
+      "minecraft:tags": {
+        "tags": [
+          "mountains",
+          "monster",
+          "overworld",
+          "meadow",
+          "bee_habitat"
+        ]
+      }
     }
   }
 }

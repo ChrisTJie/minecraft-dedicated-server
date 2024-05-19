@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "grove"
@@ -7,7 +7,7 @@
     "components": {
       "minecraft:climate": {
         "downfall": 0.8,
-        "snow_accumulation": [0.125, 0.25],
+        "snow_accumulation": [ 0.125, 0.25 ],
         "temperature": -0.2
       },
       "minecraft:surface_parameters": {
@@ -41,11 +41,15 @@
           "enabled": false
         }
       },
-      "mountains": {},
-      "cold": {},
-      "monster": {},
-      "overworld": {},
-      "grove": {}
+      "minecraft:tags": {
+        "tags": [
+          "mountains",
+          "cold",
+          "monster",
+          "overworld",
+          "grove"
+        ]
+      }
     }
   }
 }

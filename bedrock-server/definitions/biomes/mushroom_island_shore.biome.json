@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "mushroom_island_shore"
@@ -22,9 +22,13 @@
         "sea_material": "minecraft:water"
       },
 
-      "mooshroom_island": {},
-      "overworld": {},
-      "shore": {}
+      "minecraft:tags": {
+        "tags": [
+          "mooshroom_island",
+          "overworld",
+          "shore"
+        ]
+      }
     }
   }
 }

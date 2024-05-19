@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "stone_beach"
@@ -34,10 +34,14 @@
         ]
       },
 
-      "beach": {},
-      "monster": {},
-      "overworld": {},
-      "stone": {}
+      "minecraft:tags": {
+        "tags": [
+          "beach",
+          "monster",
+          "overworld",
+          "stone"
+        ]
+      }
     }
   }
 }

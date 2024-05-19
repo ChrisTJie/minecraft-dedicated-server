@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "deep_lukewarm_ocean"
@@ -27,11 +27,15 @@
         ]
       },
 
-      "deep": {},
-      "lukewarm": {},
-      "monster": {},
-      "ocean": {},
-      "overworld": {}
+      "minecraft:tags": {
+        "tags": [
+          "deep",
+          "lukewarm",
+          "monster",
+          "ocean",
+          "overworld"
+        ]
+      }
     }
   }
 }

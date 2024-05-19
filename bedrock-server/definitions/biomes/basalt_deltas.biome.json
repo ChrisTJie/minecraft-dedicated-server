@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "basalt_deltas"
@@ -30,10 +30,14 @@
         "foundation_material": "minecraft:netherrack"
       },
 
-      "nether": {},
-      "basalt_deltas": {},
-      "spawn_many_magma_cubes": {},
-      "spawn_ghast": {}
+      "minecraft:tags": {
+        "tags": [
+          "nether",
+          "basalt_deltas",
+          "spawn_many_magma_cubes",
+          "spawn_ghast"
+        ]
+      }
     }
   }
 }

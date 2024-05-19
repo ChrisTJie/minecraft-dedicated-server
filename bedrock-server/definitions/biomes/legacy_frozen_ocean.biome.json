@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "legacy_frozen_ocean"
@@ -14,9 +14,13 @@
         "noise_type": "ocean"
       },
 
-      "frozen": {},
-      "ocean": {},
-      "overworld": {}
+      "minecraft:tags": {
+        "tags": [
+          "frozen",
+          "ocean",
+          "overworld"
+        ]
+      }
     }
   }
 }

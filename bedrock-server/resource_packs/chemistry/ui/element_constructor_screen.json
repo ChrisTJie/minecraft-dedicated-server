@@ -396,7 +396,8 @@
             { "result_panel@elemconstruct.result_panel": {} },
             { "inventory@elemconstruct.inventory_panel": {} },
             { "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {} },
-            { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} }
+            { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+            { "flying_item_renderer@common.flying_item_renderer": { "layer": 21 } }
           ]
         }
       },

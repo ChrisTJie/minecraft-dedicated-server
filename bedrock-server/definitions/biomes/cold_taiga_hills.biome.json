@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "cold_taiga_hills"
@@ -22,13 +22,17 @@
         "sea_material": "minecraft:water"
       },
 
-      "animal": {},
-      "cold": {},
-      "forest": {},
-      "hills": {},
-      "monster": {},
-      "overworld": {},
-      "taiga": {}
+      "minecraft:tags": {
+        "tags": [
+          "animal",
+          "cold",
+          "forest",
+          "hills",
+          "monster",
+          "overworld",
+          "taiga"
+        ]
+      }
     }
   }
 }

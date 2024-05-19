@@ -5,7 +5,7 @@
     "name": "update announced live 2023",
     "description": "Update Announced Live 2023",
     "version": [ 0, 0, 1 ],
-    "min_engine_version": [ 1, 19, 0 ]
+    "min_engine_version": [ 1, 20, 70 ]
   },
   "modules": [
     {

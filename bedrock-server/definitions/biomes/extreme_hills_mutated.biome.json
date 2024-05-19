@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "extreme_hills_mutated"
@@ -42,11 +42,15 @@
         ]
       },
 
-      "animal": {},
-      "extreme_hills": {},
-      "monster": {},
-      "mutated": {},
-      "overworld": {}
+      "minecraft:tags": {
+        "tags": [
+          "animal",
+          "extreme_hills",
+          "monster",
+          "mutated",
+          "overworld"
+        ]
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "jagged_peaks"
@@ -29,11 +29,15 @@
         "top_material": "minecraft:snow",
         "sea_material": "minecraft:ice"
       },
-      "mountains": {},
-      "monster": {},
-      "overworld": {},
-      "frozen": {},
-      "jagged_peaks": {}
+      "minecraft:tags": {
+        "tags": [
+          "mountains",
+          "monster",
+          "overworld",
+          "frozen",
+          "jagged_peaks"
+        ]
+      }
     }
   }
 }

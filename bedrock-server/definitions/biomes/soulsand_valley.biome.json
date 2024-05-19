@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "soulsand_valley"
@@ -32,10 +32,14 @@
         "foundation_material": "minecraft:netherrack"
       },
 
-      "nether": {},
-      "soulsand_valley": {},
-      "spawn_ghast": {},
-      "spawn_endermen": {}
+      "minecraft:tags": {
+        "tags": [
+          "nether",
+          "soulsand_valley",
+          "spawn_ghast",
+          "spawn_endermen"
+        ]
+      }
     }
   }
 }

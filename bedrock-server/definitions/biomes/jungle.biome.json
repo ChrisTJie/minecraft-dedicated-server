@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "jungle"
@@ -36,11 +36,15 @@
         ]
       },
 
-      "animal": {},
-      "jungle": {},
-      "monster": {},
-      "overworld": {},
-      "rare": {}
+      "minecraft:tags": {
+        "tags": [
+          "animal",
+          "jungle",
+          "monster",
+          "overworld",
+          "rare"
+        ]
+      }
     }
   }
 }

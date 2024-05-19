@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "jungle_edge"
@@ -25,11 +25,15 @@
         "mutate_transformation": "jungle_edge_mutated"
       },
 
-      "animal": {},
-      "edge": {},
-      "jungle": {},
-      "monster": {},
-      "overworld": {}
+      "minecraft:tags": {
+        "tags": [
+          "animal",
+          "edge",
+          "jungle",
+          "monster",
+          "overworld"
+        ]
+      }
     }
   }
 }

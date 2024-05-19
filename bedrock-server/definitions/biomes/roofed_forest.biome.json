@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "roofed_forest"
@@ -29,12 +29,16 @@
         ]
       },
 
-      "animal": {},
-      "forest": {},
-      "monster": {},
-      "no_legacy_worldgen": {},
-      "overworld": {},
-      "roofed": {}
+      "minecraft:tags": {
+        "tags": [
+          "animal",
+          "forest",
+          "monster",
+          "no_legacy_worldgen",
+          "overworld",
+          "roofed"
+        ]
+      }
     }
   }
 }

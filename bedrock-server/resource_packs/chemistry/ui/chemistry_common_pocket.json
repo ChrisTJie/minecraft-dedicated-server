@@ -406,11 +406,6 @@
       { "$right_panel": {} }, // the right side of each chemistry screen is table dependent, this will be assigned on a screen-by-screen basis.
       { "left_panel@chem_common_pocket.left_panel": {} },
       {
-        "flying_item_renderer@common.flying_item_renderer": {
-          "layer": 15
-        }
-      },
-      {
         "selected_item_details_factory@common.selected_item_details_factory": {
           "control_name": "@chem_common_pocket.selected_item_details"
         }
@@ -427,7 +422,8 @@
           "$show_close_button": false,
           "layer": -1
         }
-      }
+      },
+      { "flying_item_renderer@common.flying_item_renderer": {} }
     ]
   }
 }

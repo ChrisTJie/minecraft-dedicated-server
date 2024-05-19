@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "lush_caves"
@@ -21,10 +21,14 @@
         "sea_material": "minecraft:water"
       },
 
-      "caves": {},
-      "lush_caves": {},
-      "overworld": {},
-      "monster": {}
+      "minecraft:tags": {
+        "tags": [
+          "caves",
+          "lush_caves",
+          "overworld",
+          "monster"
+        ]
+      }
     }
   }
 }

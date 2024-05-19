@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "mesa_plateau_stone_mutated"
@@ -31,11 +31,15 @@
         "noise_type": "mountains"
       },
 
-      "mesa": {},
-      "monster": {},
-      "mutated": {},
-      "overworld": {},
-      "plateau": {}
+      "minecraft:tags": {
+        "tags": [
+          "mesa",
+          "monster",
+          "mutated",
+          "overworld",
+          "plateau"
+        ]
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "frozen_peaks"
@@ -57,11 +57,15 @@
           }
         ]
       },
-      "mountains": {},
-      "monster": {},
-      "overworld": {},
-      "frozen": {},
-      "frozen_peaks": {}
+      "minecraft:tags": {
+        "tags": [
+          "mountains",
+          "monster",
+          "overworld",
+          "frozen",
+          "frozen_peaks"
+        ]
+      }
     }
   }
 }

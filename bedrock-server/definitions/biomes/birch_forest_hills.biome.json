@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "birch_forest_hills"
@@ -25,13 +25,17 @@
         "mutate_transformation": "birch_forest_hills_mutated"
       },
 
-      "animal": {},
-      "birch": {},
-      "forest": {},
-      "hills": {},
-      "monster": {},
-      "overworld": {},
-      "bee_habitat": {}
+      "minecraft:tags": {
+        "tags": [
+          "animal",
+          "birch",
+          "forest",
+          "hills",
+          "monster",
+          "overworld",
+          "bee_habitat"
+        ]
+      }
     }
   }
 }

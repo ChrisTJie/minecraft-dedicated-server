@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "desert_mutated"
@@ -22,12 +22,16 @@
         "sea_material": "minecraft:water"
       },
 
-      "desert": {},
-      "monster": {},
-      "mutated": {},
-      // "overworld" tag cannot be present in order to match legacy behavior, but is
-      // required for correct world generation -- hence: overworld_generation
-      "overworld_generation": {}
+      "minecraft:tags": {
+        "tags": [
+          "desert",
+          "monster",
+          "mutated",
+          // "overworld" tag cannot be present in order to match legacy behavior, but is
+          // required for correct world generation -- hence: overworld_generation
+          "overworld_generation"
+        ]
+      }
     }
   }
 }

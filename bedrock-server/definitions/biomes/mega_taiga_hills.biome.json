@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
       "identifier": "mega_taiga_hills"
@@ -48,13 +48,17 @@
         "mutate_transformation": "redwood_taiga_hills_mutated"
       },
 
-      "animal": {},
-      "forest": {},
-      "hills": {},
-      "mega": {},
-      "monster": {},
-      "overworld": {},
-      "taiga": {}
+      "minecraft:tags": {
+        "tags": [
+          "animal",
+          "forest",
+          "hills",
+          "mega",
+          "monster",
+          "overworld",
+          "taiga"
+        ]
+      }
     }
   }
 }

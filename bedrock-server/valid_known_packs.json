@@ -63,6 +63,13 @@
 	
 	{
 		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.20.81",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.81"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "behavior_packs/vanilla_1.16.200",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.16.200"
@@ -126,6 +133,13 @@
 	
 	{
 		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.20.70",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.70"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "behavior_packs/vanilla_1.17.20",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.17.20"
@@ -182,6 +196,13 @@
 	
 	{
 		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.20.60",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.60"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "behavior_packs/experimental_villager_trade",
 		"uuid" : "0127bd67-dc5b-45c2-8d5b-1d65876d5679",
 		"version" : "0.0.1"
@@ -224,15 +245,6 @@
 	
 	{
 		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : [ "yNqLu6W+XZoGAiWTgt4zYLUeovu3Y4pmx5/gL4b8EMI=" ],
-		"path" : "behavior_packs/test_vanilla_1.12",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.12.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
 		"path" : "behavior_packs/vanilla_1.19.50",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.19.50"
@@ -268,9 +280,23 @@
 	
 	{
 		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.20.80",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.20.80"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "behavior_packs/chemistry_1.20.50",
 		"uuid" : "91b9e624-dda6-43f3-a567-8025c53860b5",
 		"version" : "1.20.50"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/chemistry_1.20.60",
+		"uuid" : "5017d347-e962-47c0-9ace-d377321afd23",
+		"version" : "1.20.60"
 	},
 	
 	{
@@ -285,14 +311,5 @@
 		"path" : "behavior_packs/experimental_update_announced_live2023",
 		"uuid" : "ddfce3eb-4cad-4816-97e2-6926393b83cb",
 		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : [ "oII5gRnVOmMLYnKtJ7u49VlKZODTXZqmVDWRZ3TX/Fc=" ],
-		"path" : "behavior_packs/test_vanilla_1.11",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.11.0"
 	}
 ]
